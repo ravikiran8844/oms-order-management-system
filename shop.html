@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Shop - Emerald OMS</title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.1.6/sumoselect.min.css">
+<link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body>
+  <div class="loader"></div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+        <nav class="navbar navbar-expand-lg main-navbar sticky">
+        <div class="d-none d-lg-flex justify-content-between align-items-center w-100">
+         
+          
+
+
+          <div class="d-flex align-items-center">
+            <ul class="navbar-nav m-3">
+              <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+                    collapse-btn"> <i data-feather="align-justify"></i></a>
+                </li>
+            </ul>
+            <div class="nav-bold-heading">Hello, Vishnu</div>
+          </div>
+
+
+          <div class="ms-5 flex-grow-1 px-5">
+           <form action="">
+            <div class="input-group nav-search-input">
+              <input placeholder="Search for Emerald Products" class="form-control" type="search" name="" id="">
+              <div class="input-group-append">
+                <button class="btn" type="submit">                
+                  <i data-feather="search"></i>
+                </button>
+              </div>
+            </div>
+           </form>
+          </div>
+          
+         
+          
+  
+  
+  
+          <ul class="top-main-nav navbar-nav navbar-right align-items-center">
+            <li>
+              <a class="nav-link" href="#">
+                  <i data-feather="user"></i>
+                <div class="mt-1">Account</div>
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="#">
+                  <i data-feather="heart"></i>
+                <div class="mt-1">WHISLIST</div>
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="#">
+                  <i data-feather="shopping-cart"></i>
+                <div class="mt-1">Cart</div>
+              </a>
+            </li>
+          </ul>
+
+          
+        </div>
+
+
+        <div class="mobile-navbar d-flex justify-content-between w-100 align-items-center d-lg-none ">
+          <div>
+          <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg collapse-btn"> <i data-feather="align-justify"></i></a>
+          </div>
+
+          <div>
+            <img width="165" height="26" class="img-fluid" src="assets/img/mobile-logo.png" alt="">
+          </div>
+
+          <div>
+            <ul class="navbar-nav">
+              <li>
+          <a class="nav-link" href="#">
+            <i data-feather="search"></i>
+
+          </a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">
+                  <i data-feather="shopping-cart"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+
+       
+      </nav>
+
+
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" /> <span
+                class="logo-name"></span>
+            </a>
+          </div>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="index.html" class="nav-link active"><i data-feather="home"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link"><i data-feather="clock"></i><span>History</span></a>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link"><i data-feather="dollar-sign"></i><span>Wallet</span></a>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link"><i data-feather="settings"></i><span>Settings</span></a>
+            </li>
+        
+            <li class="mt-auto">
+              <a href="index.html" class="nav-link"><i data-feather="log-out"></i><span>Logout</span></a>
+            </li>
+           
+          </ul>
+
+        
+
+
+
+        </aside>
+      </div>
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section d-none d-lg-block mb-4">
+            <div class="row">
+              <div class="col-12">
+                <ul class="main-menu-links list-unstyled d-flex align-items-center justify-content-between">
+                    <li>
+                      <a class="nav-link active" href="#">All Jewellery</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#">Pendants</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#">Rings</a>
+                    </li>
+  
+                    <li>
+                      <a class="nav-link" href="#">Earrings</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#">Collections</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#">Silver Jewellery</a>
+                    </li>
+                    <li>
+                      <a class="nav-link " href="#">New Arrivals</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#">Exhibition Designs</a>
+                    </li>
+
+                    <li>
+                        <button class="filter-btn btn btn-dark p-2" id="filter-btn"><i data-feather="filter"></i></button>
+                      </li>
+                  </ul>
+              </div>
+
+
+             
+  
+            </div>
+          </section>
+
+
+
+          <section class="mb-4 filters-section  d-none d-lg-block" id="filters" style="display: none;">
+            <div class="col-12">
+                <div class="filters_wrapper">
+                    <ul class="list-unstyled d-flex align-items-center justify-content-evenly">
+                        <li>
+                            <div class="main-title"><i data-feather="filter"></i> <span>Filter</span></div>
+                        </li>
+                        <li>
+                            <div>
+                                <select name="" id="category-filter" multiple>
+                                    <option value="">
+                                        category 1
+                                    </option>
+                                    <option value="">
+                                        category 2
+                                    </option>
+                                    <option value="">
+                                        category 3
+                                    </option>
+                                    <option value="">
+                                        category 4
+                                    </option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <select name="" id="project-filter" multiple>
+                                    <option value="">
+                                        project 1  project 1 
+                                    </option>
+                                    <option value="">
+                                        project 2
+                                    </option>
+                                    <option value="">
+                                        project 3
+                                    </option>
+                                    <option value="">
+                                        project 4
+                                    </option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <select name="" id="price-filter" multiple>
+                                    <option value="">
+                                        Price 1
+                                    </option>
+                                    <option value="">
+                                        Price 2
+                                    </option>
+                                    <option value="">
+                                        Price 3
+                                    </option>
+                                    <option value="">
+                                        Price 4
+                                    </option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <select name="" id="purity-filter" multiple>
+                                    <option value="">
+                                        purity 1
+                                    </option>
+                                    <option value="">
+                                        purity 2
+                                    </option>
+                                    <option value="">
+                                        purity 3
+                                    </option>
+                                    <option value="">
+                                        purity 4
+                                    </option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <select name="" id="weight-filter" multiple>
+                                    <option value="">
+                                        weight 1
+                                    </option>
+                                    <option value="">
+                                        weight 2
+                                    </option>
+                                    <option value="">
+                                        weight 3
+                                    </option>
+                                    <option value="">
+                                        weight 4
+                                    </option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <select name="" id="type-filter" multiple>
+                                    <option value="">
+                                        type 1
+                                    </option>
+                                    <option value="">
+                                        type 2
+                                    </option>
+                                    <option value="">
+                                        type 3
+                                    </option>
+                                    <option value="">
+                                        type 4
+                                    </option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <select name="" id="more-filter" multiple>
+                                    <option value="">
+                                        option 1
+                                    </option>
+                                    <option value="">
+                                        option 2
+                                    </option>
+                                    <option value="">
+                                        option 3
+                                    </option>
+                                    <option value="">
+                                        option 4
+                                    </option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+              </div>
+          </section>
+
+
+          <section>
+           <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb px-0">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                  </nav>
+            </div>
+
+            <div class="col-12">
+                <div>SILVER JEWELLERY | 2,55,498 DESIGNS</div>
+            </div>
+
+           </div>
+
+
+           <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+
+                <div class="card">
+                    <div class="card-img-top">
+                        <img class="img-fluid w-100" width="154" height="160" src="https://s3-alpha-sig.figma.com/img/8c3c/cf75/1c718390ba00ec5efb86fe60d0475861?Expires=1698624000&Signature=eCnDJBRbZq45jg2e0-MupeG89k-S7jv6m4MN8J1k6IWsRhCZu0kwYWtSuUkINjYeq9RXksESF8FPDXBUWLE98QiGOzobLSVV4~~hI-VOQdoJpYR-sJB1r7YkdjggRecF1yKqwjt~zacGQuOqB37pjNJ2~c19kYD5LPvSusixA2uzlTE4e-lIwtZ-Jaqsl4k8gZEia32QC7q4bouODJi8lqZPPkJHQ8UiNTsMsr9DpFmodTYimwVEfwWKvbHdE-MbXvsMTs97NPaI5sAhxWhhrCzMwKRh20syUYUJkM5d1-gB7aqP5c4OuEB-xS8oz2OEWh-AgoiTlLWsPmUkIUjzEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                    </div>
+
+                    <div class="card-body">
+                        <div>
+                            <div>CSIDOL004</div>
+                            <div>30.6g</div>
+                        </div>
+                        <div>MOQ : 20O pcs</div>
+
+                        <div>
+                            <div>
+                                <button>Apply 200 Pcs</button>
+                            </div>
+                            <div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+           </div>
+          </section>
+
+
+      </div>
+      <footer class="main-footer">
+        <div>
+          Emerald © <span id="current-year">2023</span> All Rights Reserved. Developed By BBIT
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- General JS Scripts -->
+  <script src="assets/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <!-- Page Specific JS File -->
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <!-- Custom JS File -->
+  <script src="assets/js/custom.js"></script>
+  <!-- Latest compiled and minified Sumo Select JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.1.6/jquery.sumoselect.min.js"></script>
+
+  <script>
+    let year = new Date().getFullYear()
+    // console.log(year);
+    document.getElementById("current-year").textContent=year;
+</script>
+
+  <script>
+     $(document).ready(function () {
+            $("#filter-btn").click(function () {
+                $("#filters").toggle();
+            });
+        });
+  </script>
+
+
+<script>
+    $('#category-filter').SumoSelect(
+        {
+            placeholder: 'Category',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#project-filter').SumoSelect(
+        {
+            placeholder: 'Project',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#price-filter').SumoSelect(
+        {
+            placeholder: 'Price',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#purity-filter').SumoSelect(
+        {
+            placeholder: 'Purity',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#weight-filter').SumoSelect(
+        {
+            placeholder: 'Weight',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#type-filter').SumoSelect(
+        {
+            placeholder: 'Type',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#more-filter').SumoSelect(
+        {
+            placeholder: 'More Filters',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+</script>
+</body>
+
+
+</html>
