@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
+            name="viewport">
+        <title>Product Page - Emerald OMS</title>
+        <!-- General CSS Files -->
+        <link rel="stylesheet" href="assets/css/app.min.css">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/components.css">
+        <!-- Custom style CSS -->
+        <link rel='shortcut icon' type='image/x-icon'
+            href='assets/img/favicon.ico' />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.1.6/sumoselect.min.css">
+            
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="assets/css/custom.css">
+
+    </head>
+
+    <body>
+        <div class="loader"></div>
+        <div id="app">
+            <div class="main-wrapper main-wrapper-1">
+                <div class="navbar-bg"></div>
+                <nav class="navbar navbar-expand-lg main-navbar sticky">
+                    <div
+                        class="d-none d-lg-flex justify-content-between align-items-center w-100">
+
+                        <div class="d-flex align-items-center">
+                            <ul class="navbar-nav m-3">
+                                <li><a href="#" data-toggle="sidebar"
+                                        class="nav-link nav-link-lg
+                    collapse-btn"> <i data-feather="align-justify"></i></a>
+                                </li>
+                            </ul>
+                            <div class="nav-bold-heading">Hello, Vishnu</div>
+                        </div>
+
+                        <div class="ms-5 flex-grow-1 px-5">
+                            <form action>
+                                <div class="input-group nav-search-input">
+                                    <input
+                                        placeholder="Search for Emerald Products"
+                                        class="form-control" type="search" name
+                                        id>
+                                    <div class="input-group-append">
+                                        <button class="btn" type="submit">
+                                            <i data-feather="search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <ul
+                            class="top-main-nav navbar-nav navbar-right align-items-center">
+                            <li>
+                                <a class="nav-link" href="#">
+                                    <i data-feather="user"></i>
+                                    <div class="mt-1">Account</div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="nav-link" href="#">
+                                    <i data-feather="heart"></i>
+                                    <div class="mt-1">WHISLIST</div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="nav-link" href="#">
+                                    <i data-feather="shopping-cart"></i>
+                                    <div class="mt-1">Cart</div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div
+                        class="mobile-navbar d-flex justify-content-between w-100 align-items-center d-lg-none ">
+                        <div>
+                            <a href="#" data-toggle="sidebar"
+                                class="nav-link nav-link-lg collapse-btn"> <i
+                                    data-feather="align-justify"></i></a>
+                        </div>
+
+                        <div>
+                            <img width="165" height="26" class="img-fluid"
+                                src="assets/img/mobile-logo.png" alt>
+                        </div>
+
+                        <div>
+                            <ul class="navbar-nav">
+                                <li>
+                                    <a class="nav-link" href="#">
+                                        <i data-feather="search"></i>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">
+                                        <i data-feather="shopping-cart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </nav>
+
+                <div class="main-sidebar sidebar-style-2">
+                    <aside id="sidebar-wrapper">
+                        <div class="sidebar-brand">
+                            <a href="index.html"> <img alt="image"
+                                    src="assets/img/logo.png"
+                                    class="header-logo" /> <span
+                                    class="logo-name"></span>
+                            </a>
+                        </div>
+                        <ul class="sidebar-menu">
+                            <li>
+                                <a href="index.html" class="nav-link active"><i
+                                        data-feather="home"></i><span>Home</span></a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="nav-link"><i
+                                        data-feather="clock"></i><span>History</span></a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="nav-link"><i
+                                        data-feather="dollar-sign"></i><span>Wallet</span></a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="nav-link"><i
+                                        data-feather="settings"></i><span>Settings</span></a>
+                            </li>
+
+                            <li class="mt-auto">
+                                <a href="index.html" class="nav-link"><i
+                                        data-feather="log-out"></i><span>Logout</span></a>
+                            </li>
+
+                        </ul>
+
+                    </aside>
+                </div>
+                <!-- Main Content -->
+                <div class="main-content">
+                    <section class="section d-none d-lg-block mb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul
+                                    class="main-menu-links list-unstyled d-flex align-items-center justify-content-between">
+                                    <li>
+                                        <a class="nav-link active" href="#">All
+                                            Jewellery</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="#">Pendants</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="#">Rings</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="nav-link" href="#">Earrings</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="#">Collections</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="#">Silver
+                                            Jewellery</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link " href="#">New
+                                            Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="#">Exhibition
+                                            Designs</a>
+                                    </li>
+
+                                    <li>
+                                        <button
+                                            class="filter-btn btn btn-dark p-2"
+                                            id="filter-btn"><i
+                                                data-feather="filter"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="mb-4 filters-section" id="filters"
+                        style="display: none;">
+                        <div class="col-12">
+                            <div class="filters_wrapper">
+                                <ul
+                                    class="list-unstyled d-flex align-items-center justify-content-evenly">
+                                    <li>
+                                        <div class="main-title"><i
+                                                data-feather="filter"></i> <span>Filter</span></div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <select name id="category-filter"
+                                                multiple>
+                                                <option value>
+                                                    category 1
+                                                </option>
+                                                <option value>
+                                                    category 2
+                                                </option>
+                                                <option value>
+                                                    category 3
+                                                </option>
+                                                <option value>
+                                                    category 4
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <select name id="project-filter"
+                                                multiple>
+                                                <option value>
+                                                    project 1 project 1
+                                                </option>
+                                                <option value>
+                                                    project 2
+                                                </option>
+                                                <option value>
+                                                    project 3
+                                                </option>
+                                                <option value>
+                                                    project 4
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <select name id="price-filter"
+                                                multiple>
+                                                <option value>
+                                                    Price 1
+                                                </option>
+                                                <option value>
+                                                    Price 2
+                                                </option>
+                                                <option value>
+                                                    Price 3
+                                                </option>
+                                                <option value>
+                                                    Price 4
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <select name id="purity-filter"
+                                                multiple>
+                                                <option value>
+                                                    purity 1
+                                                </option>
+                                                <option value>
+                                                    purity 2
+                                                </option>
+                                                <option value>
+                                                    purity 3
+                                                </option>
+                                                <option value>
+                                                    purity 4
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <select name id="weight-filter"
+                                                multiple>
+                                                <option value>
+                                                    weight 1
+                                                </option>
+                                                <option value>
+                                                    weight 2
+                                                </option>
+                                                <option value>
+                                                    weight 3
+                                                </option>
+                                                <option value>
+                                                    weight 4
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <select name id="type-filter"
+                                                multiple>
+                                                <option value>
+                                                    type 1
+                                                </option>
+                                                <option value>
+                                                    type 2
+                                                </option>
+                                                <option value>
+                                                    type 3
+                                                </option>
+                                                <option value>
+                                                    type 4
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <select name id="more-filter"
+                                                multiple>
+                                                <option value>
+                                                    option 1
+                                                </option>
+                                                <option value>
+                                                    option 2
+                                                </option>
+                                                <option value>
+                                                    option 3
+                                                </option>
+                                                <option value>
+                                                    option 4
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="breadcrumbs">
+                        <div class="row">
+                            <div class="col-12">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb px-0">
+                                        <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="/shop.html">Silver-Jewellery</a></li>
+                                        <li class="breadcrumb-item active"
+                                            aria-current="page">Necklace</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+                    <section class="main-product">
+                        <div class="row">
+
+                            <div class="col-12 col-md-5">
+                                <div class="product-image_wrapper splide" id="main-slider">
+                                        <div class="splide__track">
+                                              <ul class="splide__list">
+                                                  <li class="splide__slide"><img class="img-fluid" width="440" height="458" src="./assets/img/product/product.png" alt=""></li>
+                                                  <li class="splide__slide"><img class="img-fluid" width="440" height="458" src="./assets/img/product/product.png" alt=""></li>
+                                                  <li class="splide__slide"><img class="img-fluid" width="440" height="458" src="./assets/img/product/product.png" alt=""></li>
+                                                  <li class="splide__slide"><img class="img-fluid" width="440" height="458" src="./assets/img/product/product.png" alt=""></li>
+                                                  <li class="splide__slide"><img class="img-fluid" width="440" height="458" src="./assets/img/product/product.png" alt=""></li>
+                                              </ul>
+                                        </div>
+                                </div>
+
+                                <div class="product-thumbnail_wrapper splide mt-3" id="thumbnail-slider">
+                                    <div class="splide__track">
+                                          <ul class="splide__list">
+                                              <li class="splide__slide"><img class="img-fluid" width="440" height="458" src="./assets/img/product/product.png" alt=""></li>
+                                              <li class="splide__slide"><img class="img-fluid" width="440" height="458" src="./assets/img/product/product.png" alt=""></li>
+                                              <li class="splide__slide"><img class="img-fluid" width="440" height="458" src="./assets/img/product/product.png" alt=""></li>
+                                              <li class="splide__slide"><img class="img-fluid" width="440" height="458" src="./assets/img/product/product.png" alt=""></li>
+                                              <li class="splide__slide"><img class="img-fluid" width="440" height="458" src="./assets/img/product/product.png" alt=""></li>
+                                          </ul>
+                                    </div>
+                            </div>
+                            </div>
+
+                             <div class="col-12 col-md-7">
+                                    <div class="d-flex align-items-center">
+                                        <div class="product-design_title">Design Code: <span class="product-design_content">DCRB2343</span></div>
+                                        <div class="ml-auto ml-sm-5">
+                                            <div class="badge in-stock-badge">IN STOCK</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-main-title mt-3 mb-4">925 Silver Ganesh Statue</div>
+
+                                    <div class="product-size-options py-3">
+
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <div class="product-options-title">SIZE</div>
+                                            <div>Size guide</div>
+                                        </div>
+
+                                        <div class="d-flex">
+                                            <div class="product-size-option">
+                                                <button>12</button>
+                                            </div>
+                                            <div  class="product-size-option active">
+                                                <button>13</button>
+                                            </div>
+                                            <div  class="product-size-option">
+                                                <button>14</button>
+                                            </div>
+                                            <div  class="product-size-option">
+                                                <button>15</button>
+                                            </div>
+                                            <div  class="product-size-option">
+                                                <button>16</button>
+                                            </div>
+                                            <div  class="product-size-option">
+                                                <button>17</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+                <footer class="main-footer">
+                    <div>
+                        Emerald © <span id="current-year">2023</span> All Rights
+                        Reserved. Developed By BBIT
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- General JS Scripts -->
+        <script src="assets/js/app.min.js"></script>
+        <!-- JS Libraies -->
+        <!-- Page Specific JS File -->
+        <!-- Template JS File -->
+        <script src="assets/js/scripts.js"></script>
+        <!-- Custom JS File -->
+        <script src="assets/js/custom.js"></script>
+        <!-- Latest compiled and minified Sumo Select JavaScript -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.1.6/jquery.sumoselect.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+
+        <script>
+    let year = new Date().getFullYear()
+    // console.log(year);
+    document.getElementById("current-year").textContent=year;
+</script>
+
+
+<script>
+    var main = new Splide( '#main-slider', {
+  type       : 'fade',
+  pagination : false,
+  arrows     : false,
+} );
+
+var thumbnails = new Splide( '#thumbnail-slider', {
+  rewind          : true,
+  fixedWidth      : 104,
+  fixedHeight     : 104,
+  isNavigation    : true,
+  gap             : 10,
+  focus           : 'center',
+  pagination      : false,
+  cover           : true,
+  dragMinThreshold: {
+    mouse: 4,
+    touch: 10,
+  },
+  breakpoints : {
+    640: {
+      fixedWidth  : 60,
+      fixedHeight : 62,
+    },
+  },
+} );
+
+main.sync( thumbnails );
+main.mount();
+thumbnails.mount();
+</script>
+
+        <script>
+     $(document).ready(function () {
+            $("#filter-btn").click(function () {
+                $("#filters").toggle();
+            });
+        });
+  </script>
+
+        <script>
+    $('#category-filter').SumoSelect(
+        {
+            placeholder: 'Category',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#project-filter').SumoSelect(
+        {
+            placeholder: 'Project',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#price-filter').SumoSelect(
+        {
+            placeholder: 'Price',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#purity-filter').SumoSelect(
+        {
+            placeholder: 'Purity',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#weight-filter').SumoSelect(
+        {
+            placeholder: 'Weight',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#type-filter').SumoSelect(
+        {
+            placeholder: 'Type',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    $('#more-filter').SumoSelect(
+        {
+            placeholder: 'More Filters',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+</script>
+    </body>
+
+</html>
