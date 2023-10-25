@@ -6,6 +6,11 @@
     font-family: 'Inter', sans-serif;
 }
 
+@font-face {
+    font-family: Bridesmaid;
+    src: url(/assets/fonts/Bridesmaid.ttf);
+}
+
 body {
     background: #F1F2F6;
 }
@@ -150,10 +155,25 @@ body {
 }
 
 .category-slider-card {
-    border-radius: 13px;
+    border-radius: 13.608px;
+    border: 0.988px solid #D9D9D9;
+    box-shadow: none;
 
 }
 
+.main-slider .splide__pagination{
+    bottom: -20px !important;
+}
+
+.main-slider .splide__pagination__page.is-active{
+    background: #F78D1E !important;
+    width: 25px !important;
+    border-radius: 2px !important;
+    outline: none !important;
+}
+.main-slider .splide__pagination__page {
+    margin: 3px 8px !important;
+}
 .category-slider-card_title {
     color: #282828;
     text-align: center;
@@ -890,7 +910,51 @@ border: none !important;
     border-bottom: 1px solid #DCDCDC;
     padding: 20px 0;
 }
+
+.main-slider picture img{
+    border-radius: 20px;
+}
+
+.thankyou-page{
+    background: #2D2D2D !important;
+}
+.thankyou-page_title{
+    color: #F78D1E;
+    text-align: center;
+    font-family: Bridesmaid;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 156.5%; /* 133.025px */
+}
+.thankyou-page_text{
+    color: #979797;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 156.5%;
+}
+
 @media(min-width:768px) {
+
+    .thankyou-page_title{
+        color: #F78D1E;
+        text-align: center;
+        font-family: Bridesmaid;
+        font-size: 85px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+    .thankyou-page_text{
+        color: #979797;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 156.5%;
+    }
     .product-specs-item_title{
         color: #7E7E7E;
         font-family: Inter;
@@ -1147,6 +1211,9 @@ border: none !important;
         line-height: normal;
         text-transform: uppercase;
         text-decoration: none;
+    }
+    .category-slider-card .card-body{
+        background: #F1F2F6 !important;
     }
 
     .category-slider-card_title {
