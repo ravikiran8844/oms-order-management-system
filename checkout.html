@@ -21,7 +21,7 @@
   <div id="app">
     <div class="main-wrapper main-wrapper-1">
       <div class="navbar-bg"></div>
-      <nav class="navbar navbar-expand-lg main-navbar sticky">
+      <nav class="navbar navbar-expand-lg main-navbar sticky p-0 py-lg-5 border-bottom">
         <div class="d-none d-lg-flex justify-content-between align-items-center w-100">
          
           
@@ -149,38 +149,65 @@
       </div>
       <!-- Main Content -->
       <div class="main-content">
-        <section class="section d-none d-lg-block">
+        <section class="section">
+            
           <div class="row">
-            <div class="col-12 mb-4">
-              <div class="">
-                <ul class="main-menu-links list-unstyled d-flex align-items-center justify-content-evenly">
-                  <li>
-                    <a class="nav-link active" href="#">All Jewellery</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#">Pendants</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#">Rings</a>
-                  </li>
+           
+            <div class="col-12 col-lg-3">
+                <div class="card">
+                    <ul class="nav nav-pills d-flex flex-row flex-column py-5 text-center" id="myTabNew" role="tablist">
+                        <li class="nav-item mb-4">
+                            <a class="nav-link active activated-tab" id="tab1" href="#content1" role="tab" aria-controls="content1" aria-selected="true" disabled>
+                                <div class="mb-4 card-link checkout-page_icon_wrapper">
+                                    <i data-feather="align-justify"></i>
+                                </div>
+                                <div>Default Finish Details</div>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item mb-4">
+                            <a class="nav-link" id="tab2" href="#content2" role="tab" aria-controls="content2" aria-selected="false" disabled>
+                                <div class="mb-4 checkout-page_icon_wrapper">icon</div>
+                                <div>Default Packaging Options</div>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a class="nav-link" id="tab3" href="#content3" role="tab" aria-controls="content3" aria-selected="false" disabled>
+                                <div class="mb-4 checkout-page_icon_wrapper">icon</div>
+                                <div>Payment</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-                  <li>
-                    <a class="nav-link" href="#">Earrings</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#">Collections</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#">Silver Jewellery</a>
-                  </li>
-                  <li>
-                    <a class="nav-link " href="#">New Arrivals</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#">Exhibition Designs</a>
-                  </li>
-                </ul>
-              </div>
+
+            <div class="col-12 col-lg-9">
+
+                <div class="card">
+                    <div class="tab-content" id="myTabContentNew">
+                        <div class="tab-pane fade active show" id="content1"
+                          role="tabpanel" aria-labelledby="tab1">
+    
+                          <div class="float-right">
+                              <a href="#" class="btn btn-outline-dark next-button" data-next="content2">Next</a>
+                          </div>
+    
+                        </div>
+                        <div class="tab-pane fade" id="content2" role="tabpanel"
+                          aria-labelledby="tab2">
+                          <div class="float-right">
+                              <a href="#" class="btn btn-outline-dark next-button" data-next="content3">Next</a>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="content3" role="tabpanel"
+                          aria-labelledby="tab3">
+                       
+                        </div>
+                      </div>
+                </div>
+                    
+
             </div>
 
           </div>
@@ -217,6 +244,26 @@
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
+
+
+  <script>
+      $(document).ready(function () {
+        var activeTabIndex = 0; // Initialize the active tab index to 0
+
+        $(".next-button").click(function () {
+            var nextTabId = $(this).data("next");
+
+
+
+            // Show the next tab
+            $('a[href="#' + nextTabId + '"]').tab('show');
+
+            // Add the custom class to the currently active tab
+            activeTabIndex++;
+            $('a[aria-controls="' + nextTabId + '"]').addClass("activated-tab");
+        });
+    });
+</script>
 </body>
 
 
