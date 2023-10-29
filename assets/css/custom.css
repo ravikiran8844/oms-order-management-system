@@ -445,29 +445,29 @@ body {
     transform: scale(1.05);
 }
 
-.SumoSelect {
+.filters-section .SumoSelect {
     width: 132px;
     height: 41px;
     flex-shrink: 0;
 }
 
-.SumoSelect>.CaptionCont {
+.filters-section .SumoSelect>.CaptionCont {
     border-radius: 20.5px !important;
     border: 1px solid #BCBCBC !important;
     background: #FFF !important;
 }
 
-.SumoSelect.open>.CaptionCont {
+.filters-section .SumoSelect.open>.CaptionCont {
     border-radius: 20.5px !important;
     border: 1px solid #BCBCBC !important;
     background: #FFF !important;
 }
 
-.SumoSelect.open>.optWrapper {
+.filters-section .SumoSelect.open>.optWrapper {
     top: 40px !important;
 }
 
-.SumoSelect.open .search-txt {
+.filters-section .SumoSelect.open .search-txt {
     border-radius: 20.5px !important;
 }
 
@@ -489,7 +489,7 @@ body {
 }
 
 
-.SumoSelect>.CaptionCont>span.placeholder {
+.filters-section .SumoSelect>.CaptionCont>span.placeholder {
     color: #2D2D2D !important;
     font-family: Inter !important;
     font-style: normal;
@@ -1497,7 +1497,7 @@ padding-bottom: 15px;
   @media (min-width:600px) {
     .shop-page_product-cards.grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 230px));
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
         /* grid-gap: 20px; */
       }
   }
@@ -1665,6 +1665,12 @@ line-height: 130%; /* 23.4px */
     border: 1px solid #F6F6F6;
     background: #FFF;
     box-shadow: 0px 0px 14px 0px rgba(216, 216, 216, 0.25);
+
+}
+.prouduct_card-image{
+    max-height: 150px;
+    padding: 10px;
+    object-fit: contain;
 }
 .wishlist-svg svg{
     stroke-width: 1.5px;
@@ -1676,4 +1682,127 @@ line-height: 130%; /* 23.4px */
     position: absolute;
     top: 10px;
     right: 10px;
+}
+.main-wrapper{
+    overflow-x: hidden;
+}
+.sticky_bottom-product-info-card{
+    /* position: sticky;
+    bottom: 0; */
+}
+.sticky_bottom-product-info-card_button{
+    border-radius: 5px;
+background: #F78D1E;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 24px */
+text-transform: uppercase;
+height: 65px;
+
+}
+.sticky_bottom-product-info-card-title{
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 24px */
+    margin-bottom: 10px;
+}
+.sticky_bottom-product-info-card_items{
+    gap: 20px;
+}
+.sticky_bottom-product-info-card_item{
+    border-right: 1px solid #BCBCBC;
+    padding-right: 20px;
+}
+.sticky_bottom-product-info-card-text{
+    color: #808080;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 20px */
+}
+
+.page-item.active .page-link {
+    border-radius: 5.288px !important;
+background: #262626 !important;
+color: #FFF !important;
+text-align: center;
+font-family: Inter;
+font-size: 15.864px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 15.864px */
+}
+.page-item .page-link {
+    border-radius: 5.288px !important;
+    border: 0.851px solid #656565 !important;
+    background: transparent !important;
+    color: #313131 !important;
+    font-family: Inter;
+    font-size: 15.864px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.page-item.disabled{
+    color: #C5C5C5 !important;
+    font-family: Inter;
+    font-size: 15.864px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 15.864px */
+}
+aside{
+    border-right: 1px solid #DFDFDF;
+}
+.large-devices_pagination{
+    border-top: 1px solid #DCDCDC;
+    padding-top: 10px;
+}
+.sticky-add-to-cart{
+    background-color: #fff;
+}
+@media (min-width:768px) {
+    .sticky-add-to-cart{
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        background-color: #fff;
+    }
+}
+
+.mobile-filters_wrapper .SumoSelect {
+    width: 100% !important;
+    margin-bottom: 20px;
+}
+
+.mobile-filters_wrapper .SumoSelect>.CaptionCont{
+    border-radius: 6px;
+    background: rgba(247, 141, 30, 0.10) !important;
+    height: 46px;
+    display: flex;
+    align-items: center;
+
+}
+
+.mobile-filters_wrapper .SumoSelect>.CaptionCont>span.placeholder{
+    color: #F78D1E !important;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+}
+
+
+.mobile-filters_wrapper .SumoSelect>.optWrapper ul, .SumoSelect.open .search-txt{
+    background: rgba(247, 141, 30, 0.10);
 }

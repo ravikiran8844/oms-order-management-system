@@ -70,7 +70,7 @@
               </li>
 
               <li class="position-relative">
-                <a class="nav-link" href="/cart.html">
+                <a class="nav-link" href="cart.html">
                   <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="33"
                       height="33" viewBox="0 0 33 33" fill="none">
@@ -130,7 +130,7 @@
                   </a>
                 </li>
                 <li class="position-relative">
-                  <a class="nav-link" href="/cart.html">
+                  <a class="nav-link" href="cart.html">
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="24"
                         height="28" viewBox="0 0 24 28" fill="none">
@@ -184,7 +184,7 @@
           </aside>
         </div>
         <!-- Main Content -->
-        <div class="main-content">
+        <div class="main-content pb-5">
 
           <div class="mb-4 text-center d-block d-lg-none">
             <div class="btn-group" role="group">
@@ -208,23 +208,126 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="filterModalLabel">Filter Options</h5>
+                  <h5 class="modal-title" id="filterModalLabel">Filter By</h5>
                   <button type="button" class="close" data-dismiss="modal"
                     aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body mobile-filters_wrapper">
                   <!-- Add your filter options here -->
-                  <p>Filter option 1: <input type="checkbox"></p>
-                  <p>Filter option 2: <input type="checkbox"></p>
-                  <p>Filter option 3: <input type="checkbox"></p>
-                  <!-- Add more filter options as needed -->
+                 <div>
+                  <select  id="mobile-category-filter" multiple>
+                    <option value>
+                      category 1
+                    </option>
+                    <option value>
+                      category 2
+                    </option>
+                    <option value>
+                      category 3
+                    </option>
+                    <option value>
+                      category 4
+                    </option>
+                  </select>
+                 </div>
+
+               
+                 <div>
+                  <select  id="mobile-project-filter" multiple>
+                    <option value>
+                      project 1
+                    </option>
+                    <option value>
+                      project 2
+                    </option>
+                    <option value>
+                      project 3
+                    </option>
+                    <option value>
+                      project 4
+                    </option>
+                  </select>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary"
-                    data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Apply Filters</button>
+
+                <div>
+                  <select  id="mobile-price-filter" multiple>
+                    <option value>
+                      Price 1
+                    </option>
+                    <option value>
+                      Price 2
+                    </option>
+                    <option value>
+                      Price 3
+                    </option>
+                    <option value>
+                      Price 4
+                    </option>
+                  </select>
+                </div>
+
+
+                <div>
+                  <select  id="mobile-purity-filter" multiple>
+                    <option value>
+                      purity 1
+                    </option>
+                    <option value>
+                      purity 2
+                    </option>
+                    <option value>
+                      purity 3
+                    </option>
+                    <option value>
+                      purity 4
+                    </option>
+                  </select>
+                </div>
+                <div>
+                  <select  id="mobile-weight-filter" multiple>
+                    <option value>
+                      weight 1
+                    </option>
+                    <option value>
+                      weight 2
+                    </option>
+                    <option value>
+                      weight 3
+                    </option>
+                    <option value>
+                      weight 4
+                    </option>
+                  </select>
+                </div>
+
+                <div>
+                  <select  id="mobile-type-filter" multiple>
+                    <option value>
+                      type 1
+                    </option>
+                    <option value>
+                      type 2
+                    </option>
+                    <option value>
+                      type 3
+                    </option>
+                    <option value>
+                      type 4
+                    </option>
+                  </select>
+                </div>
+
+
+                </div>
+                <div class="modal-footer m-auto">
+                 
+                 <div class="text-center">
+                  <button type="button" class="btn btn-warning">Apply Filters</button>
+                  <button type="button" class="btn btn-outline-warning">Clear Filters</button>
+                 </div>
+
                 </div>
               </div>
             </div>
@@ -260,7 +363,7 @@
 
           <div class="d-none d-lg-block desktop-navbar-filters">
             <section class="section d-none d-lg-block mb-4">
-              <div class="row">
+              <div class="row g-0">
                 <div class="col-12">
                   <ul
                     class="main-menu-links list-unstyled d-flex align-items-center justify-content-between">
@@ -444,7 +547,7 @@
           </div>
 
           <section class="d-none d-lg-block">
-            <div class="row">
+            <div class="row g-0">
               <div class="col-12">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb px-0">
@@ -469,82 +572,84 @@
                     </button>
                     <div class="dropdown-menu" x-placement="bottom-start"
                       style="position: absolute; transform: translate3d(0px, 29px, 0px); top: 0px; left: 0px; will-change: transform;">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Option 1</a>
+                      <a class="dropdown-item" href="#">Option 2</a>
+                      <a class="dropdown-item" href="#">Option 3</a>
                     </div>
                   </div>
-
-                  
 
                 </div>
               </div>
 
             </div>
 
-            
           </section>
 
-
-
           <section>
-            <div class="col-12 d-flex  justify-content-between  align-items-center mb-3">
-                <div class="moq-inputs_wrapper">
-                  <input id="apply-moq" type="checkbox" name="" id="">
-                  <label for="apply-moq">Apply MOQ</label>
-                </div>
+            <div
+              class="col-12 d-flex  justify-content-between  align-items-center mb-3">
+              <div class="moq-inputs_wrapper">
+                <input id="apply-moq" type="checkbox" name id>
+                <label for="apply-moq">Apply MOQ</label>
+              </div>
 
-                <div class="view-toggle">
-                  <button class="custom-icon-btn grid-view active">
-                    <i data-feather="grid"></i>
-                  </button>
+              <div class="view-toggle">
+                <button class="custom-icon-btn grid-view active">
+                  <i data-feather="grid"></i>
+                </button>
 
-                  <button class="custom-icon-btn list-view">
-                    <i data-feather="list"></i>
+                <button class="custom-icon-btn list-view">
+                  <i data-feather="list"></i>
 
-                  </button>
+                </button>
 
-               
-                </div>
+              </div>
             </div>
-
 
             <div class="row">
               <div class="col-12 shop-page_product-cards grid">
 
                 <div class="card shop-page_product-card">
                   <div class="card-checkbox_wrapper">
-                    <input class="card-checkbox" type="checkbox" name="" id="">
+                    <input class="card-checkbox" type="checkbox" name id>
                   </div>
-                  <div class="card-img-top d-flex align-items-center justify-content-center">
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
                     <a href="product.html">
-                      <img class="img-fluid prouduct_card-image" width="154" height="160"
-                      src="https://s3-alpha-sig.figma.com/img/8c3c/cf75/1c718390ba00ec5efb86fe60d0475861?Expires=1698624000&Signature=eCnDJBRbZq45jg2e0-MupeG89k-S7jv6m4MN8J1k6IWsRhCZu0kwYWtSuUkINjYeq9RXksESF8FPDXBUWLE98QiGOzobLSVV4~~hI-VOQdoJpYR-sJB1r7YkdjggRecF1yKqwjt~zacGQuOqB37pjNJ2~c19kYD5LPvSusixA2uzlTE4e-lIwtZ-Jaqsl4k8gZEia32QC7q4bouODJi8lqZPPkJHQ8UiNTsMsr9DpFmodTYimwVEfwWKvbHdE-MbXvsMTs97NPaI5sAhxWhhrCzMwKRh20syUYUJkM5d1-gB7aqP5c4OuEB-xS8oz2OEWh-AgoiTlLWsPmUkIUjzEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                      alt>
-                     </a>
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/product-1.png"
+                        alt>
+                    </a>
                   </div>
 
                   <div class="card-body">
-                    <div class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
                       <div class="card-title">CSIDOL004</div>
                       <div class="d-flex align-items-center">
-                      <div class="card-text">30.6g</div>
-                      <button class="ml-2 custom-icon-btn wishlist-svg">
-                        <i data-feather="heart"></i>
-                      </button>
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
                       </div>
                     </div>
                     <div class="card-text mt-2">MOQ : 20O pcs</div>
 
                     <div>
                       <div class="d-flex align-items-center flex-wrap">
-                        <button class="btn btn-warning card-button mr-2">Add</button>
+                        <button class="btn btn-warning card-button mr-2">Add 200
+                          Pcs</button>
 
-                        <div class="input-group quantity-input-group quantity-container">
-                          <input type="button" value="-" class="qtyminus" field="quantity">
-                          <input type="text" name="quantity" value="1" class="qty">
-                          <input type="button" value="+" class="qtyplus" field="quantity">
-                      </div>
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
                       </div>
                       <div>
 
@@ -554,88 +659,47 @@
                   </div>
 
                 </div>
-
-
-                
-                <div class="card shop-page_product-card">
-                  <div class="card-checkbox_wrapper">
-                    <input class="card-checkbox" type="checkbox" name="" id="">
-                  </div>
-                  <div class="card-img-top d-flex align-items-center justify-content-center">
-                    <a href="product.html">
-                      <img class="img-fluid prouduct_card-image" width="154" height="160"
-                      src="https://s3-alpha-sig.figma.com/img/8c3c/cf75/1c718390ba00ec5efb86fe60d0475861?Expires=1698624000&Signature=eCnDJBRbZq45jg2e0-MupeG89k-S7jv6m4MN8J1k6IWsRhCZu0kwYWtSuUkINjYeq9RXksESF8FPDXBUWLE98QiGOzobLSVV4~~hI-VOQdoJpYR-sJB1r7YkdjggRecF1yKqwjt~zacGQuOqB37pjNJ2~c19kYD5LPvSusixA2uzlTE4e-lIwtZ-Jaqsl4k8gZEia32QC7q4bouODJi8lqZPPkJHQ8UiNTsMsr9DpFmodTYimwVEfwWKvbHdE-MbXvsMTs97NPaI5sAhxWhhrCzMwKRh20syUYUJkM5d1-gB7aqP5c4OuEB-xS8oz2OEWh-AgoiTlLWsPmUkIUjzEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                      alt>
-                     </a>
-                  </div>
-
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
-                      <div class="card-title">CSIDOL004</div>
-                      <div class="d-flex align-items-center">
-                      <div class="card-text">30.6g</div>
-                      <button class="ml-2 custom-icon-btn wishlist-svg">
-                        <i data-feather="heart"></i>
-                      </button>
-                      </div>
-                    </div>
-                    <div class="card-text mt-2">MOQ : 20O pcs</div>
-
-                    <div>
-                      <div class="d-flex align-items-center flex-wrap">
-                        <button class="btn btn-warning card-button mr-2">Add</button>
-
-                        <div class="input-group quantity-input-group quantity-container">
-                          <input type="button" value="-" class="qtyminus" field="quantity">
-                          <input type="text" name="quantity" value="1" class="qty">
-                          <input type="button" value="+" class="qtyplus" field="quantity">
-                      </div>
-                      </div>
-                      <div>
-
-                      </div>
-                    </div>
-
-                  </div>
-
-                </div>
-
-
-
 
                 <div class="card shop-page_product-card">
                   <div class="card-checkbox_wrapper">
-                    <input class="card-checkbox" type="checkbox" name="" id="">
+                    <input class="card-checkbox" type="checkbox" name id>
                   </div>
-                  <div class="card-img-top d-flex align-items-center justify-content-center">
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
                     <a href="product.html">
-                      <img class="img-fluid prouduct_card-image" width="154" height="160"
-                      src="https://s3-alpha-sig.figma.com/img/8c3c/cf75/1c718390ba00ec5efb86fe60d0475861?Expires=1698624000&Signature=eCnDJBRbZq45jg2e0-MupeG89k-S7jv6m4MN8J1k6IWsRhCZu0kwYWtSuUkINjYeq9RXksESF8FPDXBUWLE98QiGOzobLSVV4~~hI-VOQdoJpYR-sJB1r7YkdjggRecF1yKqwjt~zacGQuOqB37pjNJ2~c19kYD5LPvSusixA2uzlTE4e-lIwtZ-Jaqsl4k8gZEia32QC7q4bouODJi8lqZPPkJHQ8UiNTsMsr9DpFmodTYimwVEfwWKvbHdE-MbXvsMTs97NPaI5sAhxWhhrCzMwKRh20syUYUJkM5d1-gB7aqP5c4OuEB-xS8oz2OEWh-AgoiTlLWsPmUkIUjzEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                      alt>
-                     </a>
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL004-003-L 1.png"
+                        alt>
+                    </a>
                   </div>
 
                   <div class="card-body">
-                    <div class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
                       <div class="card-title">CSIDOL004</div>
                       <div class="d-flex align-items-center">
-                      <div class="card-text">30.6g</div>
-                      <button class="ml-2 custom-icon-btn wishlist-svg">
-                        <i data-feather="heart"></i>
-                      </button>
+                        <div class="card-text">24.3g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
                       </div>
                     </div>
-                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+                    <div class="card-text mt-2">MOQ1000g</div>
 
                     <div>
                       <div class="d-flex align-items-center flex-wrap">
                         <button class="btn btn-warning card-button mr-2">Add</button>
 
-                        <div class="input-group quantity-input-group quantity-container">
-                          <input type="button" value="-" class="qtyminus" field="quantity">
-                          <input type="text" name="quantity" value="1" class="qty">
-                          <input type="button" value="+" class="qtyplus" field="quantity">
-                      </div>
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
                       </div>
                       <div>
 
@@ -645,30 +709,30 @@
                   </div>
 
                 </div>
-
-
-
 
                 <div class="card shop-page_product-card">
                   <div class="card-checkbox_wrapper">
-                    <input class="card-checkbox" type="checkbox" name="" id="">
+                    <input class="card-checkbox" type="checkbox" name id>
                   </div>
-                  <div class="card-img-top d-flex align-items-center justify-content-center">
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
                     <a href="product.html">
-                      <img class="img-fluid prouduct_card-image" width="154" height="160"
-                      src="https://s3-alpha-sig.figma.com/img/8c3c/cf75/1c718390ba00ec5efb86fe60d0475861?Expires=1698624000&Signature=eCnDJBRbZq45jg2e0-MupeG89k-S7jv6m4MN8J1k6IWsRhCZu0kwYWtSuUkINjYeq9RXksESF8FPDXBUWLE98QiGOzobLSVV4~~hI-VOQdoJpYR-sJB1r7YkdjggRecF1yKqwjt~zacGQuOqB37pjNJ2~c19kYD5LPvSusixA2uzlTE4e-lIwtZ-Jaqsl4k8gZEia32QC7q4bouODJi8lqZPPkJHQ8UiNTsMsr9DpFmodTYimwVEfwWKvbHdE-MbXvsMTs97NPaI5sAhxWhhrCzMwKRh20syUYUJkM5d1-gB7aqP5c4OuEB-xS8oz2OEWh-AgoiTlLWsPmUkIUjzEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                      alt>
-                     </a>
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL005-001-L 1.png"
+                        alt>
+                    </a>
                   </div>
 
                   <div class="card-body">
-                    <div class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
                       <div class="card-title">CSIDOL004</div>
                       <div class="d-flex align-items-center">
-                      <div class="card-text">30.6g</div>
-                      <button class="ml-2 custom-icon-btn wishlist-svg">
-                        <i data-feather="heart"></i>
-                      </button>
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
                       </div>
                     </div>
                     <div class="card-text mt-2">MOQ : 20O pcs</div>
@@ -677,11 +741,15 @@
                       <div class="d-flex align-items-center flex-wrap">
                         <button class="btn btn-warning card-button mr-2">Add</button>
 
-                        <div class="input-group quantity-input-group quantity-container">
-                          <input type="button" value="-" class="qtyminus" field="quantity">
-                          <input type="text" name="quantity" value="1" class="qty">
-                          <input type="button" value="+" class="qtyplus" field="quantity">
-                      </div>
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
                       </div>
                       <div>
 
@@ -691,42 +759,48 @@
                   </div>
 
                 </div>
-
 
 
                 <div class="card shop-page_product-card">
                   <div class="card-checkbox_wrapper">
-                    <input class="card-checkbox" type="checkbox" name="" id="">
+                    <input class="card-checkbox" type="checkbox" name id>
                   </div>
-                  <div class="card-img-top d-flex align-items-center justify-content-center">
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
                     <a href="product.html">
-                      <img class="img-fluid prouduct_card-image" width="154" height="160"
-                      src="https://s3-alpha-sig.figma.com/img/8c3c/cf75/1c718390ba00ec5efb86fe60d0475861?Expires=1698624000&Signature=eCnDJBRbZq45jg2e0-MupeG89k-S7jv6m4MN8J1k6IWsRhCZu0kwYWtSuUkINjYeq9RXksESF8FPDXBUWLE98QiGOzobLSVV4~~hI-VOQdoJpYR-sJB1r7YkdjggRecF1yKqwjt~zacGQuOqB37pjNJ2~c19kYD5LPvSusixA2uzlTE4e-lIwtZ-Jaqsl4k8gZEia32QC7q4bouODJi8lqZPPkJHQ8UiNTsMsr9DpFmodTYimwVEfwWKvbHdE-MbXvsMTs97NPaI5sAhxWhhrCzMwKRh20syUYUJkM5d1-gB7aqP5c4OuEB-xS8oz2OEWh-AgoiTlLWsPmUkIUjzEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                      alt>
-                     </a>
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL004-003-L 1.png"
+                        alt>
+                    </a>
                   </div>
 
                   <div class="card-body">
-                    <div class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
                       <div class="card-title">CSIDOL004</div>
                       <div class="d-flex align-items-center">
-                      <div class="card-text">30.6g</div>
-                      <button class="ml-2 custom-icon-btn wishlist-svg">
-                        <i data-feather="heart"></i>
-                      </button>
+                        <div class="card-text">24.3g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
                       </div>
                     </div>
-                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+                    <div class="card-text mt-2">MOQ1000g</div>
 
                     <div>
                       <div class="d-flex align-items-center flex-wrap">
                         <button class="btn btn-warning card-button mr-2">Add</button>
 
-                        <div class="input-group quantity-input-group quantity-container">
-                          <input type="button" value="-" class="qtyminus" field="quantity">
-                          <input type="text" name="quantity" value="1" class="qty">
-                          <input type="button" value="+" class="qtyplus" field="quantity">
-                      </div>
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
                       </div>
                       <div>
 
@@ -737,23 +811,1159 @@
 
                 </div>
 
-        
-             
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL005-001-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL004-003-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">24.3g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ1000g</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL005-001-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
 
 
-              
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL006-003-L 1.png"
+                        alt>
+                    </a>
+                  </div>
 
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
 
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
 
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL006-004-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add 200
+                          Pcs</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/product-1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add 200
+                          Pcs</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL004-003-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">24.3g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ1000g</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL005-001-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL005-002-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add 200
+                          Pcs</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL006-001-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL006-002-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add 200
+                          Pcs</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL006-003-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL006-004-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add 200
+                          Pcs</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/product-1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add 200
+                          Pcs</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL004-003-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">24.3g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ1000g</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL005-001-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL005-002-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add 200
+                          Pcs</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL006-001-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL006-002-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add 200
+                          Pcs</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL006-003-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="card shop-page_product-card">
+                  <div class="card-checkbox_wrapper">
+                    <input class="card-checkbox" type="checkbox" name id>
+                  </div>
+                  <div
+                    class="card-img-top d-flex align-items-center justify-content-center">
+                    <a href="product.html">
+                      <img class="img-fluid prouduct_card-image" width="154"
+                        height="160"
+                        src="assets/img/product/CSIDOL006-004-L 1.png"
+                        alt>
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between  align-items-center flex-wrap card-title_wrapper">
+                      <div class="card-title">CSIDOL004</div>
+                      <div class="d-flex align-items-center">
+                        <div class="card-text">30.6g</div>
+                        <button class="ml-2 custom-icon-btn wishlist-svg">
+                          <i data-feather="heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-text mt-2">MOQ : 20O pcs</div>
+
+                    <div>
+                      <div class="d-flex align-items-center flex-wrap">
+                        <button class="btn btn-warning card-button mr-2">Add 200
+                          Pcs</button>
+
+                        <div
+                          class="input-group quantity-input-group quantity-container">
+                          <input type="button" value="-" class="qtyminus"
+                            field="quantity">
+                          <input type="text" name="quantity" value="1"
+                            class="qty">
+                          <input type="button" value="+" class="qtyplus"
+                            field="quantity">
+                        </div>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
 
               </div>
 
             </div>
+
+
+
+           
+            <div class="my-5 pagination-links">
+              <nav class="large-devices_pagination d-none d-lg-block">
+
+                <div class="d-flex justify-content-between">
+                  <div>
+                    showing 21 - 30 of 55,498 results
+                  </div>
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+  
+              <nav class="small-devices_pagination d-block d-lg-none">
+                <div class="text-center">
+                  <a class="btn btn-dark px-4 py-2" href="#">See More Products</a>
+                </div>
+              </nav>
+            </div>
+
+
+
           </section>
+
+          
+
 
         </div>
 
+
+        
+
       </div>
+
+      <footer class="main-footer sticky-add-to-cart py-2">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap px-4">
+          <div class="d-flex flex-wrap align-items-center">
+            <div class="mr-3 sticky_bottom-product-info-card_item  mb-3">
+              <div class="sticky_bottom-product-info-card-title">Product Qty</div>
+              <div class="sticky_bottom-product-info-card-text">89 Qty</div>
+            </div>
+
+            <div class="sticky_bottom-product-info-card_item  mb-3">
+              <div class="sticky_bottom-product-info-card-title">Total Weight</div>
+              <div class="sticky_bottom-product-info-card-text">380.52 gms</div>
+            </div>
+          </div>
+
+          <div>
+            <button
+              class="btn btn-warning sticky_bottom-product-info-card_button px-3 px-md-5"><span><svg
+                  width="30" height="30" viewBox="0 0 25 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.87109 8.87097L24.1937 8.87097L24.1937 10.4839L8.87109 10.4839L8.87109 8.87097Z"
+                    fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.06641 5.64514L25.0019 5.64514L25.0019 7.25804L8.06641 7.25804L8.06641 5.64514Z"
+                    fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 0.806452C0 0.361061 0.361061 0 0.806452 0H6.64841L10.2774 12.0968H22.5806C23.026 12.0968 23.3871 12.4578 23.3871 12.9032C23.3871 13.3486 23.026 13.7097 22.5806 13.7097H9.07739L5.44836 1.6129H0.806452C0.361061 1.6129 0 1.25184 0 0.806452Z"
+                    fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.6937 16.9355C11.0256 16.9355 10.484 17.4771 10.484 18.1451C10.484 18.8132 11.0256 19.3548 11.6937 19.3548C12.3618 19.3548 12.9034 18.8132 12.9034 18.1451C12.9034 17.4771 12.3618 16.9355 11.6937 16.9355ZM8.87109 18.1451C8.87109 16.5863 10.1348 15.3226 11.6937 15.3226C13.2525 15.3226 14.5163 16.5863 14.5163 18.1451C14.5163 19.704 13.2525 20.9677 11.6937 20.9677C10.1348 20.9677 8.87109 19.704 8.87109 18.1451Z"
+                    fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19.7601 16.9355C19.092 16.9355 18.5504 17.4771 18.5504 18.1452C18.5504 18.8132 19.092 19.3548 19.7601 19.3548C20.4282 19.3548 20.9698 18.8132 20.9698 18.1452C20.9698 17.4771 20.4282 16.9355 19.7601 16.9355ZM16.9375 18.1452C16.9375 16.5863 18.2012 15.3226 19.7601 15.3226C21.3189 15.3226 22.5827 16.5863 22.5827 18.1452C22.5827 19.704 21.3189 20.9677 19.7601 20.9677C18.2012 20.9677 16.9375 19.704 16.9375 18.1452Z"
+                    fill="white" />
+                </svg>
+              </span> Place Order</button>
+          </div>
+        </div>
+
+      </footer>
+
     </div>
 
     <!-- General JS Scripts -->
@@ -769,11 +1979,15 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.1.6/jquery.sumoselect.min.js"></script>
 
     <script>
-     $(document).ready(function () {
+   
             $("#filter-btn").click(function () {
                 $("#filters").toggle();
             });
-            $('#category-filter').SumoSelect(
+
+
+
+  $(document).ready(function(){
+    $('#category-filter').SumoSelect(
         {
             placeholder: 'Category',
             search: true, 
@@ -823,9 +2037,60 @@
         }
     );
 
-        });
+    $('#mobile-category-filter').SumoSelect(
+        {
+            placeholder: 'Category',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+   
+    $('#mobile-project-filter').SumoSelect(
+        {
+            placeholder: 'Project',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    
+    $('#mobile-price-filter').SumoSelect(
+        {
+            placeholder: 'Price',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+   
+    $('#mobile-purity-filter').SumoSelect(
+        {
+            placeholder: 'Purity',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+   
+    $('#mobile-weight-filter').SumoSelect(
+        {
+            placeholder: 'Weight',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+    
+    $('#mobile-type-filter').SumoSelect(
+        {
+            placeholder: 'Type',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
+
+    
+
+  })
+     
   </script>
-<script>
+    <script>
   jQuery(document).ready(function() {
 // Handle increment and decrement for each container
 $('.quantity-container').each(function() {
