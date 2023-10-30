@@ -446,10 +446,13 @@ body {
 }
 
 .filters-section .SumoSelect {
-    width: 132px;
+    width: max-content;
+    min-width: 140px;
     height: 41px;
     flex-shrink: 0;
 }
+
+
 
 .filters-section .SumoSelect>.CaptionCont {
     border-radius: 20.5px !important;
@@ -739,9 +742,16 @@ line-height: 100%; /* 20px */
     outline: none;
 }
 
+.checkout-page .nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
 .checkout-page_icon_wrapper{
-    width: 102px;
-    height: 102px;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
     flex-shrink: 0;
     border-radius: 50%;
     margin: auto;
@@ -755,8 +765,15 @@ line-height: 100%; /* 20px */
 }
 
 .nav-pills .nav-item .nav-link.activated-tab .checkout-page_icon_wrapper svg{
-    height: 50px;
-    width: 50px;
+    height: 32px;
+    width: 32px;
+}
+.checkout-page_nav-text{
+ 
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 123%; /* 17.22px */
 }
 
 .nav-pills .nav-item .nav-link:hover{
@@ -935,8 +952,24 @@ font-style: normal;
 font-weight: 400;
 line-height: 156.5%;
 }
+.checkout-page_main-title{
+    color: #2D2D2D;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 30px */
+}
 
 @media(min-width:768px) {
+    .checkout-page_main-title{
+        color: #2D2D2D;
+        font-family: Inter;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 30px */
+    }
 
     .thankyou-page_title{
         color: #F78D1E;
@@ -1277,7 +1310,7 @@ line-height: 140%; /* 44.8px */
     background: #F78D1E;
     color: #fff;
     top: 0;
-    right: -2px;
+    right: 0;
     position: absolute;
     min-width: 24px;
     min-height: 24px;
@@ -1295,8 +1328,8 @@ line-height: 140%; /* 44.8px */
     font-size: 10px;
     background: #F78D1E;
     color: #fff;
-    top: -2px;
-    right: -2px;
+    top: -5px;
+    right: 0px;
     position: absolute;
     min-width: 20px;
     min-height: 20px;
@@ -1686,10 +1719,10 @@ line-height: 130%; /* 23.4px */
 .main-wrapper{
     overflow-x: hidden;
 }
-.sticky_bottom-product-info-card{
-    /* position: sticky;
-    bottom: 0; */
-}
+/* .sticky_bottom-product-info-card{
+    position: sticky;
+    bottom: 0;
+} */
 .sticky_bottom-product-info-card_button{
     border-radius: 5px;
 background: #F78D1E;
@@ -1805,4 +1838,34 @@ aside{
 
 .mobile-filters_wrapper .SumoSelect>.optWrapper ul, .SumoSelect.open .search-txt{
     background: rgba(247, 141, 30, 0.10);
+}
+
+.mobile-sort_options select{
+    border-radius: 6px;
+    background: rgba(247, 141, 30, 0.10);
+    height: 46px;
+    width: 100%;
+    color: #F78D1E;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+
+.checkout-page .SumoSelect>.CaptionCont {
+    border-radius: 5px !important;
+    border: 1px solid #DDD !important;
+    background: #F1F2F6 !important;
+}
+
+.checkout-page .SumoSelect.open>.CaptionCont {
+    border-radius: 5px !important;
+    border: 1px solid #DDD !important;
+    background: #F1F2F6 !important;
+}
+
+.checkout-page .SumoSelect.open .search-txt{
+    background-color: #fff;
 }

@@ -15,8 +15,8 @@
     <!-- Custom style CSS -->
     <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.1.6/sumoselect.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sumoselect@3.4.9/sumoselect.min.css" integrity="sha256-0muqXQE7xbwFLUkp34AfrbvlKi2OPXgKtUgIZOUYqnY=" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/custom.css">
 
   </head>
@@ -69,7 +69,7 @@
                 </a>
               </li>
 
-              <li class="position-relative">
+              <li class="position-relative  mr-3">
                 <a class="nav-link" href="cart.html">
                   <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="33"
@@ -234,7 +234,7 @@
                  </div>
 
                
-                 <div>
+                 <!-- <div>
                   <select  id="mobile-project-filter" multiple>
                     <option value>
                       project 1
@@ -249,21 +249,42 @@
                       project 4
                     </option>
                   </select>
-                </div>
+                </div> -->
+
+
 
                 <div>
-                  <select  id="mobile-price-filter" multiple>
+                  <select name id="mobile-sub-category-filter" multiple>
                     <option value>
-                      Price 1
+                      sub category 1
                     </option>
                     <option value>
-                      Price 2
+                      sub category 2
                     </option>
                     <option value>
-                      Price 3
+                      sub category 3
                     </option>
                     <option value>
-                      Price 4
+                      sub category 4
+                    </option>
+                  </select>
+                </div>
+               
+
+
+                <div>
+                  <select  id="mobile-weight-filter" multiple>
+                    <option value>
+                      weight 1
+                    </option>
+                    <option value>
+                      weight 2
+                    </option>
+                    <option value>
+                      weight 3
+                    </option>
+                    <option value>
+                      weight 4
                     </option>
                   </select>
                 </div>
@@ -285,23 +306,25 @@
                     </option>
                   </select>
                 </div>
-                <div>
-                  <select  id="mobile-weight-filter" multiple>
-                    <option value>
-                      weight 1
-                    </option>
-                    <option value>
-                      weight 2
-                    </option>
-                    <option value>
-                      weight 3
-                    </option>
-                    <option value>
-                      weight 4
-                    </option>
-                  </select>
-                </div>
+               
 
+               <div>
+                <select name id="mobile-collection-filter" multiple>
+                  <option value>
+                    collection 1
+                  </option>
+                  <option value>
+                    collection 2
+                  </option>
+                  <option value>
+                    collection 3
+                  </option>
+                  <option value>
+                    collection 4
+                  </option>
+                </select>
+               </div>
+                
                 <div>
                   <select  id="mobile-type-filter" multiple>
                     <option value>
@@ -345,18 +368,29 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body mobile-sort_options">
                   <!-- Add your sort options here -->
-                  <p>Sort by option 1: <select></select></p>
-                  <p>Sort by option 2: <select></select></p>
-                  <p>Sort by option 3: <select></select></p>
+                  <select name="" id="">
+                    <option value="">
+                      Price Low to High
+                    </option>
+                    <option value="">
+                      Price High to Low
+                    </option>
+                  </select>
                   <!-- Add more sort options as needed -->
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary"
-                    data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Apply Sorting</button>
-                </div>
+              
+
+
+                <div class="modal-footer m-auto">
+                 
+                  <div class="text-center">
+                   <button type="button" class="btn btn-warning">Apply Sorting</button>
+                   <button type="button" data-dismiss="modal" class="btn btn-outline-warning">Close</button>
+                  </div>
+ 
+                 </div>
               </div>
             </div>
           </div>
@@ -433,9 +467,9 @@
                     </li>
                     <li>
                       <div>
-                        <select name id="project-filter" multiple>
+                        <!-- <select name id="project-filter" multiple>
                           <option value>
-                            project 1 project 1
+                            project 1
                           </option>
                           <option value>
                             project 2
@@ -446,23 +480,41 @@
                           <option value>
                             project 4
                           </option>
+                        </select> -->
+
+
+                        <select name id="sub-category-filter" multiple>
+                          <option value>
+                            sub category 1
+                          </option>
+                          <option value>
+                            sub category 2
+                          </option>
+                          <option value>
+                            sub category 3
+                          </option>
+                          <option value>
+                            sub category 4
+                          </option>
                         </select>
                       </div>
                     </li>
+                  
+                    
                     <li>
                       <div>
-                        <select name id="price-filter" multiple>
+                        <select name id="weight-filter" multiple>
                           <option value>
-                            Price 1
+                            weight 1
                           </option>
                           <option value>
-                            Price 2
+                            weight 2
                           </option>
                           <option value>
-                            Price 3
+                            weight 3
                           </option>
                           <option value>
-                            Price 4
+                            weight 4
                           </option>
                         </select>
                       </div>
@@ -485,25 +537,7 @@
                         </select>
                       </div>
                     </li>
-                    <li>
-                      <div>
-                        <select name id="weight-filter" multiple>
-                          <option value>
-                            weight 1
-                          </option>
-                          <option value>
-                            weight 2
-                          </option>
-                          <option value>
-                            weight 3
-                          </option>
-                          <option value>
-                            weight 4
-                          </option>
-                        </select>
-                      </div>
-                    </li>
-                    <li>
+                    <!-- <li>
                       <div>
                         <select name id="type-filter" multiple>
                           <option value>
@@ -517,6 +551,25 @@
                           </option>
                           <option value>
                             type 4
+                          </option>
+                        </select>
+                      </div>
+                    </li> -->
+
+                    <li>
+                      <div>
+                        <select name id="collection-filter" multiple>
+                          <option value>
+                            collection 1
+                          </option>
+                          <option value>
+                            collection 2
+                          </option>
+                          <option value>
+                            collection 3
+                          </option>
+                          <option value>
+                            collection 4
                           </option>
                         </select>
                       </div>
@@ -1974,10 +2027,9 @@
     <script src="assets/js/scripts.js"></script>
     <!-- Custom JS File -->
     <script src="assets/js/custom.js"></script>
-    <!-- Latest compiled and minified Sumo Select JavaScript -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.1.6/jquery.sumoselect.min.js"></script>
 
+   
+    <script src="https://cdn.jsdelivr.net/npm/sumoselect@3.4.9/jquery.sumoselect.min.js" integrity="sha256-lW1sW167GdI6I2ZyNIA625wlrAm8P6TYjR//5gZlhnY=" crossorigin="anonymous"></script>
     <script>
    
             $("#filter-btn").click(function () {
@@ -1994,20 +2046,14 @@
             okCancelInMulti: true,
         }
     );
-    $('#project-filter').SumoSelect(
+    $('#sub-category-filter').SumoSelect(
         {
-            placeholder: 'Project',
+            placeholder: 'Sub Category',
             search: true, 
             okCancelInMulti: true,
         }
     );
-    $('#price-filter').SumoSelect(
-        {
-            placeholder: 'Price',
-            search: true, 
-            okCancelInMulti: true,
-        }
-    );
+   
     $('#purity-filter').SumoSelect(
         {
             placeholder: 'Purity',
@@ -2017,14 +2063,22 @@
     );
     $('#weight-filter').SumoSelect(
         {
-            placeholder: 'Weight',
+            placeholder: 'Weight Range',
             search: true, 
             okCancelInMulti: true,
         }
     );
-    $('#type-filter').SumoSelect(
+    // $('#type-filter').SumoSelect(
+    //     {
+    //         placeholder: 'Type',
+    //         search: true, 
+    //         okCancelInMulti: true,
+    //     }
+    // );
+
+    $('#collection-filter').SumoSelect(
         {
-            placeholder: 'Type',
+            placeholder: 'Collection',
             search: true, 
             okCancelInMulti: true,
         }
@@ -2037,6 +2091,9 @@
         }
     );
 
+
+
+
     $('#mobile-category-filter').SumoSelect(
         {
             placeholder: 'Category',
@@ -2044,23 +2101,18 @@
             okCancelInMulti: true,
         }
     );
-   
-    $('#mobile-project-filter').SumoSelect(
+
+    $('#mobile-sub-category-filter').SumoSelect(
         {
-            placeholder: 'Project',
+            placeholder: 'Sub Category',
             search: true, 
             okCancelInMulti: true,
         }
     );
+   
+
     
-    $('#mobile-price-filter').SumoSelect(
-        {
-            placeholder: 'Price',
-            search: true, 
-            okCancelInMulti: true,
-        }
-    );
-   
+ 
     $('#mobile-purity-filter').SumoSelect(
         {
             placeholder: 'Purity',
@@ -2071,12 +2123,18 @@
    
     $('#mobile-weight-filter').SumoSelect(
         {
-            placeholder: 'Weight',
+            placeholder: 'Weight Range',
             search: true, 
             okCancelInMulti: true,
         }
     );
-    
+    $('#mobile-collection-filter').SumoSelect(
+        {
+            placeholder: 'Type',
+            search: true, 
+            okCancelInMulti: true,
+        }
+    );
     $('#mobile-type-filter').SumoSelect(
         {
             placeholder: 'Type',

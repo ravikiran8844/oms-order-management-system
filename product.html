@@ -79,7 +79,7 @@
               </a>
             </li>
 
-            <li class="position-relative">
+            <li class="position-relative  mr-3">
               <a class="nav-link" href="cart.html">
                   <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
@@ -216,166 +216,14 @@
                                         <a class="nav-link" href="#">New Arrivals</a>
                                       </li>
 
-                                    <li>
-                                        <button
-                                            class="filter-btn btn btn-dark p-2"
-                                            id="filter-btn"><i
-                                                data-feather="filter"></i></button>
-                                    </li>
+                                 
                                 </ul>
                             </div>
 
                         </div>
                     </section>
 
-                    <section class="mb-4 filters-section" id="filters"
-                        style="display: none;">
-                        <div class="col-12">
-                            <div class="filters_wrapper">
-                                <ul
-                                    class="list-unstyled d-flex align-items-center justify-content-evenly">
-                                    <li>
-                                        <div class="main-title"><i
-                                                data-feather="filter"></i> <span>Filter</span></div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <select name id="category-filter"
-                                                multiple>
-                                                <option value>
-                                                    category 1
-                                                </option>
-                                                <option value>
-                                                    category 2
-                                                </option>
-                                                <option value>
-                                                    category 3
-                                                </option>
-                                                <option value>
-                                                    category 4
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <select name id="project-filter"
-                                                multiple>
-                                                <option value>
-                                                    project 1 project 1
-                                                </option>
-                                                <option value>
-                                                    project 2
-                                                </option>
-                                                <option value>
-                                                    project 3
-                                                </option>
-                                                <option value>
-                                                    project 4
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <select name id="price-filter"
-                                                multiple>
-                                                <option value>
-                                                    Price 1
-                                                </option>
-                                                <option value>
-                                                    Price 2
-                                                </option>
-                                                <option value>
-                                                    Price 3
-                                                </option>
-                                                <option value>
-                                                    Price 4
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <select name id="purity-filter"
-                                                multiple>
-                                                <option value>
-                                                    purity 1
-                                                </option>
-                                                <option value>
-                                                    purity 2
-                                                </option>
-                                                <option value>
-                                                    purity 3
-                                                </option>
-                                                <option value>
-                                                    purity 4
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <select name id="weight-filter"
-                                                multiple>
-                                                <option value>
-                                                    weight 1
-                                                </option>
-                                                <option value>
-                                                    weight 2
-                                                </option>
-                                                <option value>
-                                                    weight 3
-                                                </option>
-                                                <option value>
-                                                    weight 4
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <select name id="type-filter"
-                                                multiple>
-                                                <option value>
-                                                    type 1
-                                                </option>
-                                                <option value>
-                                                    type 2
-                                                </option>
-                                                <option value>
-                                                    type 3
-                                                </option>
-                                                <option value>
-                                                    type 4
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <select name id="more-filter"
-                                                multiple>
-                                                <option value>
-                                                    option 1
-                                                </option>
-                                                <option value>
-                                                    option 2
-                                                </option>
-                                                <option value>
-                                                    option 3
-                                                </option>
-                                                <option value>
-                                                    option 4
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </section>
+                 
 
                     <section class="breadcrumbs">
                         <div class="row">
@@ -828,13 +676,7 @@ main.mount();
 thumbnails.mount();
 </script>
 
-        <script>
-     $(document).ready(function () {
-            $("#filter-btn").click(function () {
-                $("#filters").toggle();
-            });
-        });
-  </script>
+ 
 
         <script>
        $(document).ready(function() {
@@ -852,57 +694,7 @@ thumbnails.mount();
     });
   </script>
 
-        <script>
-    $('#category-filter').SumoSelect(
-        {
-            placeholder: 'Category',
-            search: true, 
-            okCancelInMulti: true,
-        }
-    );
-    $('#project-filter').SumoSelect(
-        {
-            placeholder: 'Project',
-            search: true, 
-            okCancelInMulti: true,
-        }
-    );
-    $('#price-filter').SumoSelect(
-        {
-            placeholder: 'Price',
-            search: true, 
-            okCancelInMulti: true,
-        }
-    );
-    $('#purity-filter').SumoSelect(
-        {
-            placeholder: 'Purity',
-            search: true, 
-            okCancelInMulti: true,
-        }
-    );
-    $('#weight-filter').SumoSelect(
-        {
-            placeholder: 'Weight',
-            search: true, 
-            okCancelInMulti: true,
-        }
-    );
-    $('#type-filter').SumoSelect(
-        {
-            placeholder: 'Type',
-            search: true, 
-            okCancelInMulti: true,
-        }
-    );
-    $('#more-filter').SumoSelect(
-        {
-            placeholder: 'More Filters',
-            search: true, 
-            okCancelInMulti: true,
-        }
-    );
-</script>
+
     </body>
 
 </html>
