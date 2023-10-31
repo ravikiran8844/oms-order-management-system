@@ -197,7 +197,7 @@
                     id="myTabNew" role="tablist">
                     <li class="nav-item mb-2">
                       <a class="nav-link active activated-tab" id="tab1"
-                        href="#content1" role="tab" aria-controls="content1"
+                        href="#default-finish" role="tab" aria-controls="default-finish"
                         aria-selected="true" disabled>
                         <div class="mb-2 card-link checkout-page_icon_wrapper">
                           <i data-feather="align-justify"></i>
@@ -208,8 +208,8 @@
                     </li>
 
                     <li class="nav-item mb-2">
-                      <a class="nav-link" id="tab2" href="#content2" role="tab"
-                        aria-controls="content2" aria-selected="false" disabled>
+                      <a class="nav-link" id="tab2" href="#default-packing" role="tab"
+                        aria-controls="default-packing" aria-selected="false" disabled>
                         <div class="mb-2 checkout-page_icon_wrapper">
                           <i data-feather="truck"></i>
 
@@ -219,8 +219,8 @@
                       </a>
                     </li>
                     <li class="nav-item mb-2">
-                      <a class="nav-link" id="tab3" href="#content3" role="tab"
-                        aria-controls="content3" aria-selected="false" disabled>
+                      <a class="nav-link" id="tab3" href="#payment-options" role="tab"
+                        aria-controls="payment-options" aria-selected="false" disabled>
                         <div class="mb-2 checkout-page_icon_wrapper">
                           <i data-feather="credit-card"></i>
 
@@ -235,482 +235,740 @@
 
               <div class>
 
-                
-                  <div class="tab-content" id="myTabContentNew">
-                    <div class="tab-pane fade active show" id="content1"
-                      role="tabpanel" aria-labelledby="tab1">
+                <div class="tab-content" id="myTabContentNew">
+                  <div class="tab-pane fade active show" id="default-finish"
+                    role="tabpanel" aria-labelledby="tab1">
 
-                      <div class="card d-none d-md-block">
-                        <div class="card-header d-flex justify-content-between">
-                          <div class="checkout-page_main-title">Default Finish
-                            Details</div>
+                    <div class="card d-none d-md-block">
+                      <div class="card-header d-flex justify-content-between">
+                        <div class="checkout-page_main-title">Default Finish
+                          Details</div>
+                        <div class="d-flex">
+                          <div class="mr-2">
+                            <select multiple name id="category">
+                              <option value="1">EF Idol</option>
+                              <option value="2">Solid Idol</option>
+                              <option value="3">Feather Lite</option>
+                            </select>
+                          </div>
+
+                          <div>
+                            <select multiple name id="finished">
+                              <option value="1">option 1</option>
+                              <option value="2">option 2</option>
+                              <option value="3">option 3</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <div class="cart-items_card desktop-cart">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Image</th>
+                                  <th>Product SKU</th>
+                                  <th>Purity</th>
+                                  <th>Size</th>
+                                  <th>Qty</th>
+                                  <th>Weight</th>
+                                  <th>MOQ Status</th>
+                                  <th>Remarks</th>
+                                  <th>Finish</th>
+
+                                </tr>
+                              </thead>
+
+                              <tbody>
+
+                                <tr>
+                                  <td>
+                                    <a href="/assets/img/product/product.png"
+                                      data-lightbox="image-DCRB2341-1"
+                                      data-title="DCRB2341-1">
+                                      <img class="square bg-white p-2"
+                                        src="/assets/img/product/product.png"
+                                        width="60" height="60" alt>
+                                    </a>
+
+                                  </td>
+                                  <td>DCRB2343</td>
+
+                                  <td>
+                                    <select name="purity" id="purity">
+                                      <option value="93">93</option>
+                                      <option value="92">92</option>
+                                      <option value="99">99</option>
+                                    </select>
+                                  </td>
+                                  <td>
+
+                                    <select name="size" id="size">
+                                      <option value="23">23</option>
+                                      <option value="22">22</option>
+                                      <option value="21">21</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="input-group quantity-input-group quantity-container">
+                                      <input type='button' value='-'
+                                        class='qtyminus' field='quantity' />
+                                      <input type='text' name='quantity'
+                                        value='1' class='qty' />
+                                      <input type='button' value='+'
+                                        class='qtyplus' field='quantity' />
+                                    </div>
+                                  </td>
+                                  <td>19.9gms</td>
+                                  <td>
+                                    <div class="text-red">
+                                      <span><svg width="21" height="19"
+                                          viewBox="0 0 21 19" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M20.5773 16.0749L11.742 0.76907C11.1872 -0.250943 9.6003 -0.261773 9.04688 0.769118C9.04688 0.76907 0.211592 16.0749 0.211592 16.0749C-0.0714637 16.56 -0.0695963 17.143 0.211592 17.6303C0.490015 18.1167 0.994883 18.41 1.55916 18.41H19.2297C20.3913 18.4484 21.1942 17.0589 20.5773 16.0749ZM9.13225 5.71385C9.16204 4.10561 11.6265 4.10155 11.6566 5.71388C11.6566 5.71385 11.6566 11.9023 11.6566 11.9023C11.6259 13.5062 9.16368 13.5086 9.13225 11.9022C9.13225 11.9023 9.13225 5.71385 9.13225 5.71385ZM10.3944 16.5018C8.57924 16.444 8.57966 13.8122 10.3945 13.7547C12.2097 13.8125 12.2092 16.4443 10.3944 16.5018Z"
+                                            fill="#FF0000" />
+                                          <path
+                                            d="M10.3428 12.3663C10.6338 12.4026 10.9178 12.2071 10.9145 11.9023C10.9145 11.9023 10.9145 5.71386 10.9145 5.71386C10.9177 5.08776 9.87196 5.08574 9.87501 5.71388C9.87501 5.71386 9.87501 11.9023 9.87501 11.9023C9.87501 12.1584 10.0829 12.3663 10.3428 12.3663Z"
+                                            fill="#FF0000" />
+                                          <path
+                                            d="M10.3947 14.4972C9.56499 14.5108 9.56511 15.7459 10.3947 15.7593C11.2244 15.7457 11.2242 14.5107 10.3947 14.4972Z"
+                                            fill="#FF0000" />
+                                        </svg>
+                                      </span> MOQ not applied
+                                    </div>
+                                  </td>
+                                  <td class="text-green">Add Remarks</td>
+                                  <td>
+                                    <select
+                                      class="badge cart-items_card_finish-badge"
+                                      name="size" id="size">
+                                      <option value="Matt">Matt</option>
+                                      <option value>Matt 2</option>
+                                    </select>
+                                  </td>
+
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <a href="/assets/img/product/product.png"
+                                      data-lightbox="image-DCRB2341-2"
+                                      data-title="DCRB2341-2">
+                                      <img class="square bg-white p-2"
+                                        src="/assets/img/product/product.png"
+                                        width="60" height="60" alt>
+                                    </a>
+
+                                  </td>
+                                  <td>DCRB2343</td>
+
+                                  <td>
+                                    <select name="purity" id="purity">
+                                      <option value="93">93</option>
+                                      <option value="92">92</option>
+                                      <option value="99">99</option>
+                                    </select>
+                                  </td>
+                                  <td>
+
+                                    <select name="size" id="size">
+                                      <option value="23">23</option>
+                                      <option value="22">22</option>
+                                      <option value="21">21</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="input-group quantity-input-group quantity-container">
+                                      <input type='button' value='-'
+                                        class='qtyminus' field='quantity' />
+                                      <input type='text' name='quantity'
+                                        value='1' class='qty' />
+                                      <input type='button' value='+'
+                                        class='qtyplus' field='quantity' />
+                                    </div>
+                                  </td>
+                                  <td>19.9gms</td>
+                                  <td>
+                                    <div class="text-red">
+                                      <span><svg width="21" height="19"
+                                          viewBox="0 0 21 19" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M20.5773 16.0749L11.742 0.76907C11.1872 -0.250943 9.6003 -0.261773 9.04688 0.769118C9.04688 0.76907 0.211592 16.0749 0.211592 16.0749C-0.0714637 16.56 -0.0695963 17.143 0.211592 17.6303C0.490015 18.1167 0.994883 18.41 1.55916 18.41H19.2297C20.3913 18.4484 21.1942 17.0589 20.5773 16.0749ZM9.13225 5.71385C9.16204 4.10561 11.6265 4.10155 11.6566 5.71388C11.6566 5.71385 11.6566 11.9023 11.6566 11.9023C11.6259 13.5062 9.16368 13.5086 9.13225 11.9022C9.13225 11.9023 9.13225 5.71385 9.13225 5.71385ZM10.3944 16.5018C8.57924 16.444 8.57966 13.8122 10.3945 13.7547C12.2097 13.8125 12.2092 16.4443 10.3944 16.5018Z"
+                                            fill="#FF0000" />
+                                          <path
+                                            d="M10.3428 12.3663C10.6338 12.4026 10.9178 12.2071 10.9145 11.9023C10.9145 11.9023 10.9145 5.71386 10.9145 5.71386C10.9177 5.08776 9.87196 5.08574 9.87501 5.71388C9.87501 5.71386 9.87501 11.9023 9.87501 11.9023C9.87501 12.1584 10.0829 12.3663 10.3428 12.3663Z"
+                                            fill="#FF0000" />
+                                          <path
+                                            d="M10.3947 14.4972C9.56499 14.5108 9.56511 15.7459 10.3947 15.7593C11.2244 15.7457 11.2242 14.5107 10.3947 14.4972Z"
+                                            fill="#FF0000" />
+                                        </svg>
+                                      </span> MOQ not applied
+                                    </div>
+                                  </td>
+                                  <td class="text-green">Add Remarks</td>
+                                  <td>
+                                    <select
+                                      class="badge cart-items_card_finish-badge"
+                                      name="size" id="size">
+                                      <option value="Matt">Matt</option>
+                                      <option value>Matt 2</option>
+                                    </select>
+                                  </td>
+
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <a href="/assets/img/product/product.png"
+                                      data-lightbox="image-DCRB2341-3"
+                                      data-title="DCRB2341-3">
+                                      <img class="square bg-white p-2"
+                                        src="/assets/img/product/product.png"
+                                        width="60" height="60" alt>
+                                    </a>
+
+                                  </td>
+                                  <td>DCRB2343</td>
+
+                                  <td>
+                                    <select name="purity" id="purity">
+                                      <option value="93">93</option>
+                                      <option value="92">92</option>
+                                      <option value="99">99</option>
+                                    </select>
+                                  </td>
+                                  <td>
+
+                                    <select name="size" id="size">
+                                      <option value="23">23</option>
+                                      <option value="22">22</option>
+                                      <option value="21">21</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="input-group quantity-input-group quantity-container">
+                                      <input type='button' value='-'
+                                        class='qtyminus' field='quantity' />
+                                      <input type='text' name='quantity'
+                                        value='1' class='qty' />
+                                      <input type='button' value='+'
+                                        class='qtyplus' field='quantity' />
+                                    </div>
+                                  </td>
+                                  <td>19.9gms</td>
+                                  <td>
+                                    <div class="text-red">
+                                      <span><svg width="21" height="19"
+                                          viewBox="0 0 21 19" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M20.5773 16.0749L11.742 0.76907C11.1872 -0.250943 9.6003 -0.261773 9.04688 0.769118C9.04688 0.76907 0.211592 16.0749 0.211592 16.0749C-0.0714637 16.56 -0.0695963 17.143 0.211592 17.6303C0.490015 18.1167 0.994883 18.41 1.55916 18.41H19.2297C20.3913 18.4484 21.1942 17.0589 20.5773 16.0749ZM9.13225 5.71385C9.16204 4.10561 11.6265 4.10155 11.6566 5.71388C11.6566 5.71385 11.6566 11.9023 11.6566 11.9023C11.6259 13.5062 9.16368 13.5086 9.13225 11.9022C9.13225 11.9023 9.13225 5.71385 9.13225 5.71385ZM10.3944 16.5018C8.57924 16.444 8.57966 13.8122 10.3945 13.7547C12.2097 13.8125 12.2092 16.4443 10.3944 16.5018Z"
+                                            fill="#FF0000" />
+                                          <path
+                                            d="M10.3428 12.3663C10.6338 12.4026 10.9178 12.2071 10.9145 11.9023C10.9145 11.9023 10.9145 5.71386 10.9145 5.71386C10.9177 5.08776 9.87196 5.08574 9.87501 5.71388C9.87501 5.71386 9.87501 11.9023 9.87501 11.9023C9.87501 12.1584 10.0829 12.3663 10.3428 12.3663Z"
+                                            fill="#FF0000" />
+                                          <path
+                                            d="M10.3947 14.4972C9.56499 14.5108 9.56511 15.7459 10.3947 15.7593C11.2244 15.7457 11.2242 14.5107 10.3947 14.4972Z"
+                                            fill="#FF0000" />
+                                        </svg>
+                                      </span> MOQ not applied
+                                    </div>
+                                  </td>
+                                  <td class="text-green">Add Remarks</td>
+                                  <td>
+                                    <select
+                                      class="badge cart-items_card_finish-badge"
+                                      name="size" id="size">
+                                      <option value="Matt">Matt</option>
+                                      <option value>Matt 2</option>
+                                    </select>
+                                  </td>
+
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <a href="/assets/img/product/product.png"
+                                      data-lightbox="image-DCRB2341-4"
+                                      data-title="DCRB2341-4">
+                                      <img class="square bg-white p-2"
+                                        src="/assets/img/product/product.png"
+                                        width="60" height="60" alt>
+                                    </a>
+
+                                  </td>
+                                  <td>DCRB2343</td>
+
+                                  <td>
+                                    <select name="purity" id="purity">
+                                      <option value="93">93</option>
+                                      <option value="92">92</option>
+                                      <option value="99">99</option>
+                                    </select>
+                                  </td>
+                                  <td>
+
+                                    <select name="size" id="size">
+                                      <option value="23">23</option>
+                                      <option value="22">22</option>
+                                      <option value="21">21</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="input-group quantity-input-group quantity-container">
+                                      <input type='button' value='-'
+                                        class='qtyminus' field='quantity' />
+                                      <input type='text' name='quantity'
+                                        value='1' class='qty' />
+                                      <input type='button' value='+'
+                                        class='qtyplus' field='quantity' />
+                                    </div>
+                                  </td>
+                                  <td>19.9gms</td>
+                                  <td>
+                                    <div class="text-red">
+                                      <span><svg width="21" height="19"
+                                          viewBox="0 0 21 19" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M20.5773 16.0749L11.742 0.76907C11.1872 -0.250943 9.6003 -0.261773 9.04688 0.769118C9.04688 0.76907 0.211592 16.0749 0.211592 16.0749C-0.0714637 16.56 -0.0695963 17.143 0.211592 17.6303C0.490015 18.1167 0.994883 18.41 1.55916 18.41H19.2297C20.3913 18.4484 21.1942 17.0589 20.5773 16.0749ZM9.13225 5.71385C9.16204 4.10561 11.6265 4.10155 11.6566 5.71388C11.6566 5.71385 11.6566 11.9023 11.6566 11.9023C11.6259 13.5062 9.16368 13.5086 9.13225 11.9022C9.13225 11.9023 9.13225 5.71385 9.13225 5.71385ZM10.3944 16.5018C8.57924 16.444 8.57966 13.8122 10.3945 13.7547C12.2097 13.8125 12.2092 16.4443 10.3944 16.5018Z"
+                                            fill="#FF0000" />
+                                          <path
+                                            d="M10.3428 12.3663C10.6338 12.4026 10.9178 12.2071 10.9145 11.9023C10.9145 11.9023 10.9145 5.71386 10.9145 5.71386C10.9177 5.08776 9.87196 5.08574 9.87501 5.71388C9.87501 5.71386 9.87501 11.9023 9.87501 11.9023C9.87501 12.1584 10.0829 12.3663 10.3428 12.3663Z"
+                                            fill="#FF0000" />
+                                          <path
+                                            d="M10.3947 14.4972C9.56499 14.5108 9.56511 15.7459 10.3947 15.7593C11.2244 15.7457 11.2242 14.5107 10.3947 14.4972Z"
+                                            fill="#FF0000" />
+                                        </svg>
+                                      </span> MOQ not applied
+                                    </div>
+                                  </td>
+                                  <td class="text-green">Add Remarks</td>
+                                  <td>
+                                    <select
+                                      class="badge cart-items_card_finish-badge"
+                                      name="size" id="size">
+                                      <option value="Matt">Matt</option>
+                                      <option value>Matt 2</option>
+                                    </select>
+                                  </td>
+
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="card-footer">
+                        <div class="mb-3 d-flex justify-content-end">
+                          <a href="#" class="btn btn-warning next-button"
+                            data-next="default-packing">Continue</a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="d-block d-md-none mobile-cart m-auto">
+                      <div class="checkout-page_main-title mb-4">Default Finish
+                        Details</div>
+
+                      <div>
+                        <div
+                          class="d-flex justify-content-between mobile-cart_item">
                           <div class="d-flex">
-                            <div class="mr-2">
-                              <select multiple name id="category">
-                                <option value="1">EF Idol</option>
-                                <option value="2">Solid Idol</option>
-                                <option value="3">Feather Lite</option>
-                              </select>
+                            <div class="mr-4">
+                              <img class="square bg-white p-2"
+                                src="/assets/img/product/product.png" width="96"
+                                height="96" alt>
+
                             </div>
-  
                             <div>
-                              <select multiple name id="finished">
-                                <option value="1">option 1</option>
-                                <option value="2">option 2</option>
-                                <option value="3">option 3</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-  
-                        <div class="card-body">
-                          <div class="cart-items_card desktop-cart">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th>Image</th>
-                                        <th>Product SKU</th>
-                                        <th>Purity</th>
-                                        <th>Size</th>
-                                        <th>Qty</th>
-                                        <th>Weight</th>
-                                        <th>MOQ  Status</th>
-                                        <th>Remarks</th>
-                                        <th>Finish</th>
-        
-                                      </tr>
-                                    </thead>
-                                   
-                                    <tbody>
-    
-                                        <tr>
-                                            <td>
-                                                <a href="/assets/img/product/product.png" data-lightbox="image-DCRB2341-1" data-title="DCRB2341-1">
-                                                    <img class="square bg-white p-2" src="/assets/img/product/product.png" width="60" height="60" alt="">
-                                                </a>
-        
-                                            </td>
-                                            <td>DCRB2343</td>
-            
-                                            <td>
-                                                <select name="purity" id="purity">
-                                                    <option value="93">93</option>
-                                                    <option value="92">92</option>
-                                                    <option value="99">99</option>
-                                                </select>
-                                            </td>
-                                            <td>
-        
-        
-                                                <select name="size" id="size">
-                                                    <option value="23">23</option>
-                                                    <option value="22">22</option>
-                                                    <option value="21">21</option>
-                                                </select>
-                                            </td>
-                                            <td>
-                                                <div class="input-group quantity-input-group quantity-container">
-                                                    <input type='button' value='-' class='qtyminus' field='quantity' />
-                                                    <input type='text' name='quantity' value='1' class='qty' />
-                                                    <input type='button' value='+' class='qtyplus' field='quantity' />
-                                                </div>
-                                            </td>
-                                            <td>19.9gms</td>
-                                            <td>
-                                                <div class="text-red">
-                                                    <span><svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M20.5773 16.0749L11.742 0.76907C11.1872 -0.250943 9.6003 -0.261773 9.04688 0.769118C9.04688 0.76907 0.211592 16.0749 0.211592 16.0749C-0.0714637 16.56 -0.0695963 17.143 0.211592 17.6303C0.490015 18.1167 0.994883 18.41 1.55916 18.41H19.2297C20.3913 18.4484 21.1942 17.0589 20.5773 16.0749ZM9.13225 5.71385C9.16204 4.10561 11.6265 4.10155 11.6566 5.71388C11.6566 5.71385 11.6566 11.9023 11.6566 11.9023C11.6259 13.5062 9.16368 13.5086 9.13225 11.9022C9.13225 11.9023 9.13225 5.71385 9.13225 5.71385ZM10.3944 16.5018C8.57924 16.444 8.57966 13.8122 10.3945 13.7547C12.2097 13.8125 12.2092 16.4443 10.3944 16.5018Z" fill="#FF0000"/>
-                                                        <path d="M10.3428 12.3663C10.6338 12.4026 10.9178 12.2071 10.9145 11.9023C10.9145 11.9023 10.9145 5.71386 10.9145 5.71386C10.9177 5.08776 9.87196 5.08574 9.87501 5.71388C9.87501 5.71386 9.87501 11.9023 9.87501 11.9023C9.87501 12.1584 10.0829 12.3663 10.3428 12.3663Z" fill="#FF0000"/>
-                                                        <path d="M10.3947 14.4972C9.56499 14.5108 9.56511 15.7459 10.3947 15.7593C11.2244 15.7457 11.2242 14.5107 10.3947 14.4972Z" fill="#FF0000"/>
-                                                        </svg>
-                                                        </span> MOQ not applied
-                                                </div>
-                                            </td>
-                                            <td class="text-green">Add Remarks</td>
-                                            <td>
-                                                <select class="badge cart-items_card_finish-badge" name="size" id="size">
-                                                    <option value="Matt">Matt</option>
-                                                    <option value="">Matt 2</option>
-                                                </select>
-                                            </td>
-            
-                                          </tr>
-    
-    
-    
-                                          <tr>
-                                            <td>
-                                                <a href="/assets/img/product/product.png" data-lightbox="image-DCRB2341-2" data-title="DCRB2341-2">
-                                                    <img class="square bg-white p-2" src="/assets/img/product/product.png" width="60" height="60" alt="">
-                                                </a>
-        
-                                            </td>
-                                            <td>DCRB2343</td>
-            
-                                            <td>
-                                                <select name="purity" id="purity">
-                                                    <option value="93">93</option>
-                                                    <option value="92">92</option>
-                                                    <option value="99">99</option>
-                                                </select>
-                                            </td>
-                                            <td>
-        
-        
-                                                <select name="size" id="size">
-                                                    <option value="23">23</option>
-                                                    <option value="22">22</option>
-                                                    <option value="21">21</option>
-                                                </select>
-                                            </td>
-                                            <td>
-                                                <div class="input-group quantity-input-group quantity-container">
-                                                    <input type='button' value='-' class='qtyminus' field='quantity' />
-                                                    <input type='text' name='quantity' value='1' class='qty' />
-                                                    <input type='button' value='+' class='qtyplus' field='quantity' />
-                                                </div>
-                                            </td>
-                                            <td>19.9gms</td>
-                                            <td>
-                                                <div class="text-red">
-                                                    <span><svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M20.5773 16.0749L11.742 0.76907C11.1872 -0.250943 9.6003 -0.261773 9.04688 0.769118C9.04688 0.76907 0.211592 16.0749 0.211592 16.0749C-0.0714637 16.56 -0.0695963 17.143 0.211592 17.6303C0.490015 18.1167 0.994883 18.41 1.55916 18.41H19.2297C20.3913 18.4484 21.1942 17.0589 20.5773 16.0749ZM9.13225 5.71385C9.16204 4.10561 11.6265 4.10155 11.6566 5.71388C11.6566 5.71385 11.6566 11.9023 11.6566 11.9023C11.6259 13.5062 9.16368 13.5086 9.13225 11.9022C9.13225 11.9023 9.13225 5.71385 9.13225 5.71385ZM10.3944 16.5018C8.57924 16.444 8.57966 13.8122 10.3945 13.7547C12.2097 13.8125 12.2092 16.4443 10.3944 16.5018Z" fill="#FF0000"/>
-                                                        <path d="M10.3428 12.3663C10.6338 12.4026 10.9178 12.2071 10.9145 11.9023C10.9145 11.9023 10.9145 5.71386 10.9145 5.71386C10.9177 5.08776 9.87196 5.08574 9.87501 5.71388C9.87501 5.71386 9.87501 11.9023 9.87501 11.9023C9.87501 12.1584 10.0829 12.3663 10.3428 12.3663Z" fill="#FF0000"/>
-                                                        <path d="M10.3947 14.4972C9.56499 14.5108 9.56511 15.7459 10.3947 15.7593C11.2244 15.7457 11.2242 14.5107 10.3947 14.4972Z" fill="#FF0000"/>
-                                                        </svg>
-                                                        </span> MOQ not applied
-                                                </div>
-                                            </td>
-                                            <td class="text-green">Add Remarks</td>
-                                            <td>
-                                                <select class="badge cart-items_card_finish-badge" name="size" id="size">
-                                                    <option value="Matt">Matt</option>
-                                                    <option value="">Matt 2</option>
-                                                </select>
-                                            </td>
-            
-                                          </tr>
-    
-    
-                                          <tr>
-                                            <td>
-                                                <a href="/assets/img/product/product.png" data-lightbox="image-DCRB2341-3" data-title="DCRB2341-3">
-                                                    <img class="square bg-white p-2" src="/assets/img/product/product.png" width="60" height="60" alt="">
-                                                </a>
-        
-                                            </td>
-                                            <td>DCRB2343</td>
-            
-                                            <td>
-                                                <select name="purity" id="purity">
-                                                    <option value="93">93</option>
-                                                    <option value="92">92</option>
-                                                    <option value="99">99</option>
-                                                </select>
-                                            </td>
-                                            <td>
-        
-        
-                                                <select name="size" id="size">
-                                                    <option value="23">23</option>
-                                                    <option value="22">22</option>
-                                                    <option value="21">21</option>
-                                                </select>
-                                            </td>
-                                            <td>
-                                                <div class="input-group quantity-input-group quantity-container">
-                                                    <input type='button' value='-' class='qtyminus' field='quantity' />
-                                                    <input type='text' name='quantity' value='1' class='qty' />
-                                                    <input type='button' value='+' class='qtyplus' field='quantity' />
-                                                </div>
-                                            </td>
-                                            <td>19.9gms</td>
-                                            <td>
-                                                <div class="text-red">
-                                                    <span><svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M20.5773 16.0749L11.742 0.76907C11.1872 -0.250943 9.6003 -0.261773 9.04688 0.769118C9.04688 0.76907 0.211592 16.0749 0.211592 16.0749C-0.0714637 16.56 -0.0695963 17.143 0.211592 17.6303C0.490015 18.1167 0.994883 18.41 1.55916 18.41H19.2297C20.3913 18.4484 21.1942 17.0589 20.5773 16.0749ZM9.13225 5.71385C9.16204 4.10561 11.6265 4.10155 11.6566 5.71388C11.6566 5.71385 11.6566 11.9023 11.6566 11.9023C11.6259 13.5062 9.16368 13.5086 9.13225 11.9022C9.13225 11.9023 9.13225 5.71385 9.13225 5.71385ZM10.3944 16.5018C8.57924 16.444 8.57966 13.8122 10.3945 13.7547C12.2097 13.8125 12.2092 16.4443 10.3944 16.5018Z" fill="#FF0000"/>
-                                                        <path d="M10.3428 12.3663C10.6338 12.4026 10.9178 12.2071 10.9145 11.9023C10.9145 11.9023 10.9145 5.71386 10.9145 5.71386C10.9177 5.08776 9.87196 5.08574 9.87501 5.71388C9.87501 5.71386 9.87501 11.9023 9.87501 11.9023C9.87501 12.1584 10.0829 12.3663 10.3428 12.3663Z" fill="#FF0000"/>
-                                                        <path d="M10.3947 14.4972C9.56499 14.5108 9.56511 15.7459 10.3947 15.7593C11.2244 15.7457 11.2242 14.5107 10.3947 14.4972Z" fill="#FF0000"/>
-                                                        </svg>
-                                                        </span> MOQ not applied
-                                                </div>
-                                            </td>
-                                            <td class="text-green">Add Remarks</td>
-                                            <td>
-                                                <select class="badge cart-items_card_finish-badge" name="size" id="size">
-                                                    <option value="Matt">Matt</option>
-                                                    <option value="">Matt 2</option>
-                                                </select>
-                                            </td>
-            
-                                          </tr>
-    
-    
-                                          <tr>
-                                            <td>
-                                                <a href="/assets/img/product/product.png" data-lightbox="image-DCRB2341-4" data-title="DCRB2341-4">
-                                                    <img class="square bg-white p-2" src="/assets/img/product/product.png" width="60" height="60" alt="">
-                                                </a>
-        
-                                            </td>
-                                            <td>DCRB2343</td>
-            
-                                            <td>
-                                                <select name="purity" id="purity">
-                                                    <option value="93">93</option>
-                                                    <option value="92">92</option>
-                                                    <option value="99">99</option>
-                                                </select>
-                                            </td>
-                                            <td>
-        
-        
-                                                <select name="size" id="size">
-                                                    <option value="23">23</option>
-                                                    <option value="22">22</option>
-                                                    <option value="21">21</option>
-                                                </select>
-                                            </td>
-                                            <td>
-                                                <div class="input-group quantity-input-group quantity-container">
-                                                    <input type='button' value='-' class='qtyminus' field='quantity' />
-                                                    <input type='text' name='quantity' value='1' class='qty' />
-                                                    <input type='button' value='+' class='qtyplus' field='quantity' />
-                                                </div>
-                                            </td>
-                                            <td>19.9gms</td>
-                                            <td>
-                                                <div class="text-red">
-                                                    <span><svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M20.5773 16.0749L11.742 0.76907C11.1872 -0.250943 9.6003 -0.261773 9.04688 0.769118C9.04688 0.76907 0.211592 16.0749 0.211592 16.0749C-0.0714637 16.56 -0.0695963 17.143 0.211592 17.6303C0.490015 18.1167 0.994883 18.41 1.55916 18.41H19.2297C20.3913 18.4484 21.1942 17.0589 20.5773 16.0749ZM9.13225 5.71385C9.16204 4.10561 11.6265 4.10155 11.6566 5.71388C11.6566 5.71385 11.6566 11.9023 11.6566 11.9023C11.6259 13.5062 9.16368 13.5086 9.13225 11.9022C9.13225 11.9023 9.13225 5.71385 9.13225 5.71385ZM10.3944 16.5018C8.57924 16.444 8.57966 13.8122 10.3945 13.7547C12.2097 13.8125 12.2092 16.4443 10.3944 16.5018Z" fill="#FF0000"/>
-                                                        <path d="M10.3428 12.3663C10.6338 12.4026 10.9178 12.2071 10.9145 11.9023C10.9145 11.9023 10.9145 5.71386 10.9145 5.71386C10.9177 5.08776 9.87196 5.08574 9.87501 5.71388C9.87501 5.71386 9.87501 11.9023 9.87501 11.9023C9.87501 12.1584 10.0829 12.3663 10.3428 12.3663Z" fill="#FF0000"/>
-                                                        <path d="M10.3947 14.4972C9.56499 14.5108 9.56511 15.7459 10.3947 15.7593C11.2244 15.7457 11.2242 14.5107 10.3947 14.4972Z" fill="#FF0000"/>
-                                                        </svg>
-                                                        </span> MOQ not applied
-                                                </div>
-                                            </td>
-                                            <td class="text-green">Add Remarks</td>
-                                            <td>
-                                                <select class="badge cart-items_card_finish-badge" name="size" id="size">
-                                                    <option value="Matt">Matt</option>
-                                                    <option value="">Matt 2</option>
-                                                </select>
-                                            </td>
-            
-                                          </tr>
-                                    </tbody>
-                                  </table>
-        
-                            </div>
-                            
-                        </div>
-                          
-                        </div>
-  
-                        <div class="card-footer">
-                          <div class="mb-3 d-flex justify-content-end">
-                            <a href="#" class="btn btn-warning next-button"
-                              data-next="content2">Continue</a>
-                          </div>
-                        </div>
-
-                      </div>
-
-
-
-                      <div class="d-block d-md-none mobile-cart m-auto">
-                        <div>
-                          <div class="d-flex justify-content-between mobile-cart_item">
-                            <div class="d-flex">
-                                <div class="mr-4">
-                                    <img class="square bg-white p-2" src="/assets/img/product/product.png" width="96" height="96" alt="">
-
-                                </div>
-                                <div>
-                                    <div class="cart-page_card-bold-title mb-2">DCRB2343</div>
-                                    <div class="cart-page_card-light-text mb-2">19.9gms</div>
-                                    <div class="input-group quantity-input-group quantity-container">
-                                        <input type='button' value='-' class='qtyminus' field='quantity' />
-                                        <input type='text' name='quantity' value='1' class='qty' />
-                                        <input type='button' value='+' class='qtyplus' field='quantity' />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <button class=" border-0 bg-transparent">
-                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.81443 19.9863C1.85397 20.5382 2.10311 21.0541 2.51057 21.4284C2.91822 21.8029 3.45332 22.0072 4.00668 21.9998H13.4379C13.9912 22.0072 14.5263 21.8028 14.934 21.4284C15.3415 21.0542 15.5906 20.5382 15.6301 19.9863L16.3703 7.22372C16.6866 7.10023 16.9584 6.88431 17.1499 6.60394C17.3416 6.32375 17.4442 5.99211 17.4443 5.65269V4.46203C17.4438 4.01465 17.2658 3.58588 16.9493 3.26956C16.633 2.95326 16.2042 2.77526 15.7568 2.77452H12.5268L12.3456 1.50118C12.2943 1.08937 12.0952 0.710071 11.7852 0.434012C11.4754 0.157968 11.0756 0.00378985 10.6608 0H6.7785C6.36435 0.00487458 5.96609 0.159775 5.65717 0.435639C5.34845 0.711684 5.15002 1.09027 5.09877 1.50119L4.91498 2.77453H1.6875C1.24013 2.77526 0.811352 2.95327 0.495038 3.26957C0.178553 3.58588 0.000554613 4.01465 0 4.46204V5.6527C0.000180526 5.99211 0.102728 6.32378 0.294457 6.60395C0.486007 6.88433 0.757698 7.10024 1.07401 7.22373L1.81443 19.9863ZM14.3385 19.9112C14.3176 20.1332 14.2129 20.3391 14.0455 20.4867C13.8781 20.6342 13.6608 20.7126 13.4378 20.7057H4.00664C3.78368 20.7126 3.56631 20.6342 3.39897 20.4867C3.23161 20.3391 3.1269 20.1332 3.10596 19.9112L2.37859 7.34042H15.0607L14.3385 19.9112ZM6.39276 1.68245C6.41154 1.46959 6.58305 1.30241 6.79645 1.28905H10.6787C10.88 1.3165 11.0351 1.48006 11.0514 1.68245L11.2092 2.76949L6.22458 2.76967L6.39276 1.68245ZM1.29402 4.46221C1.29529 4.24556 1.47077 4.07026 1.68741 4.06882H15.7566C15.9732 4.07026 16.1487 4.24556 16.1499 4.46221V5.65287C16.1499 5.87006 15.9739 6.04626 15.7566 6.04626H1.68741C1.47005 6.04626 1.29402 5.87006 1.29402 5.65287V4.46221Z" fill="#F78D1E"/>
-                                        <path d="M8.72227 19.0236C8.89396 19.0236 9.05843 18.9553 9.17975 18.834C9.30107 18.7127 9.36931 18.5481 9.36931 18.3765V8.92964C9.36931 8.57235 9.07955 8.28259 8.72227 8.28259C8.36498 8.28259 8.07522 8.57235 8.07522 8.92964V18.3715C8.07377 18.5439 8.14148 18.7098 8.26298 18.8324C8.3843 18.9548 8.54967 19.0237 8.72227 19.0237V19.0236Z" fill="#F78D1E"/>
-                                        <path d="M5.74266 18.3377H5.77895C5.95119 18.3289 6.11277 18.252 6.22777 18.1236C6.34295 17.9954 6.40216 17.8264 6.39242 17.6544L5.95227 9.56122C5.93313 9.20393 5.62766 8.92988 5.27037 8.9492C4.91308 8.96852 4.63904 9.27381 4.65817 9.6311L5.09832 17.7298C5.11872 18.0709 5.4009 18.3372 5.74264 18.3381L5.74266 18.3377Z" fill="#F78D1E"/>
-                                        <path d="M11.6652 18.3349H11.7015C12.0421 18.3343 12.3241 18.0693 12.3458 17.7293L12.7832 9.63615C12.8025 9.27887 12.5285 8.97339 12.1712 8.95407C11.8137 8.93493 11.5084 9.20881 11.4891 9.56627L11.0517 17.6544C11.0427 17.8261 11.102 17.9943 11.2172 18.122C11.3322 18.2496 11.4935 18.3263 11.6651 18.335L11.6652 18.3349Z" fill="#F78D1E"/>
-                                        </svg>                                        
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-between mobile-cart_item">
-                            <div class="d-flex">
-                                <div class="mr-4">
-                                    <img class="square bg-white p-2" src="/assets/img/product/product.png" width="96" height="96" alt="">
-
-                                </div>
-                                <div>
-                                    <div class="cart-page_card-bold-title mb-2">DCRB2343</div>
-                                    <div class="cart-page_card-light-text mb-2">19.9gms</div>
-                                    <div class="input-group quantity-input-group quantity-container">
-                                        <input type='button' value='-' class='qtyminus' field='quantity' />
-                                        <input type='text' name='quantity' value='1' class='qty' />
-                                        <input type='button' value='+' class='qtyplus' field='quantity' />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <button class=" border-0 bg-transparent">
-                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.81443 19.9863C1.85397 20.5382 2.10311 21.0541 2.51057 21.4284C2.91822 21.8029 3.45332 22.0072 4.00668 21.9998H13.4379C13.9912 22.0072 14.5263 21.8028 14.934 21.4284C15.3415 21.0542 15.5906 20.5382 15.6301 19.9863L16.3703 7.22372C16.6866 7.10023 16.9584 6.88431 17.1499 6.60394C17.3416 6.32375 17.4442 5.99211 17.4443 5.65269V4.46203C17.4438 4.01465 17.2658 3.58588 16.9493 3.26956C16.633 2.95326 16.2042 2.77526 15.7568 2.77452H12.5268L12.3456 1.50118C12.2943 1.08937 12.0952 0.710071 11.7852 0.434012C11.4754 0.157968 11.0756 0.00378985 10.6608 0H6.7785C6.36435 0.00487458 5.96609 0.159775 5.65717 0.435639C5.34845 0.711684 5.15002 1.09027 5.09877 1.50119L4.91498 2.77453H1.6875C1.24013 2.77526 0.811352 2.95327 0.495038 3.26957C0.178553 3.58588 0.000554613 4.01465 0 4.46204V5.6527C0.000180526 5.99211 0.102728 6.32378 0.294457 6.60395C0.486007 6.88433 0.757698 7.10024 1.07401 7.22373L1.81443 19.9863ZM14.3385 19.9112C14.3176 20.1332 14.2129 20.3391 14.0455 20.4867C13.8781 20.6342 13.6608 20.7126 13.4378 20.7057H4.00664C3.78368 20.7126 3.56631 20.6342 3.39897 20.4867C3.23161 20.3391 3.1269 20.1332 3.10596 19.9112L2.37859 7.34042H15.0607L14.3385 19.9112ZM6.39276 1.68245C6.41154 1.46959 6.58305 1.30241 6.79645 1.28905H10.6787C10.88 1.3165 11.0351 1.48006 11.0514 1.68245L11.2092 2.76949L6.22458 2.76967L6.39276 1.68245ZM1.29402 4.46221C1.29529 4.24556 1.47077 4.07026 1.68741 4.06882H15.7566C15.9732 4.07026 16.1487 4.24556 16.1499 4.46221V5.65287C16.1499 5.87006 15.9739 6.04626 15.7566 6.04626H1.68741C1.47005 6.04626 1.29402 5.87006 1.29402 5.65287V4.46221Z" fill="#F78D1E"/>
-                                        <path d="M8.72227 19.0236C8.89396 19.0236 9.05843 18.9553 9.17975 18.834C9.30107 18.7127 9.36931 18.5481 9.36931 18.3765V8.92964C9.36931 8.57235 9.07955 8.28259 8.72227 8.28259C8.36498 8.28259 8.07522 8.57235 8.07522 8.92964V18.3715C8.07377 18.5439 8.14148 18.7098 8.26298 18.8324C8.3843 18.9548 8.54967 19.0237 8.72227 19.0237V19.0236Z" fill="#F78D1E"/>
-                                        <path d="M5.74266 18.3377H5.77895C5.95119 18.3289 6.11277 18.252 6.22777 18.1236C6.34295 17.9954 6.40216 17.8264 6.39242 17.6544L5.95227 9.56122C5.93313 9.20393 5.62766 8.92988 5.27037 8.9492C4.91308 8.96852 4.63904 9.27381 4.65817 9.6311L5.09832 17.7298C5.11872 18.0709 5.4009 18.3372 5.74264 18.3381L5.74266 18.3377Z" fill="#F78D1E"/>
-                                        <path d="M11.6652 18.3349H11.7015C12.0421 18.3343 12.3241 18.0693 12.3458 17.7293L12.7832 9.63615C12.8025 9.27887 12.5285 8.97339 12.1712 8.95407C11.8137 8.93493 11.5084 9.20881 11.4891 9.56627L11.0517 17.6544C11.0427 17.8261 11.102 17.9943 11.2172 18.122C11.3322 18.2496 11.4935 18.3263 11.6651 18.335L11.6652 18.3349Z" fill="#F78D1E"/>
-                                        </svg>                                        
-                                </button>
-                            </div>
-                        </div>
-
-
-                        <div class="d-flex justify-content-between mobile-cart_item">
-                            <div class="d-flex">
-                                <div class="mr-4">
-                                    <img class="square bg-white p-2" src="/assets/img/product/product.png" width="96" height="96" alt="">
-                                </div>
-                                <div>
-                                    <div class="cart-page_card-bold-title mb-2">DCRB2343</div>
-                                    <div class="cart-page_card-light-text mb-2">19.9gms</div>
-                                    <div class="input-group quantity-input-group quantity-container">
-                                        <input type='button' value='-' class='qtyminus' field='quantity' />
-                                        <input type='text' name='quantity' value='1' class='qty' />
-                                        <input type='button' value='+' class='qtyplus' field='quantity' />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <button class=" border-0 bg-transparent">
-                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.81443 19.9863C1.85397 20.5382 2.10311 21.0541 2.51057 21.4284C2.91822 21.8029 3.45332 22.0072 4.00668 21.9998H13.4379C13.9912 22.0072 14.5263 21.8028 14.934 21.4284C15.3415 21.0542 15.5906 20.5382 15.6301 19.9863L16.3703 7.22372C16.6866 7.10023 16.9584 6.88431 17.1499 6.60394C17.3416 6.32375 17.4442 5.99211 17.4443 5.65269V4.46203C17.4438 4.01465 17.2658 3.58588 16.9493 3.26956C16.633 2.95326 16.2042 2.77526 15.7568 2.77452H12.5268L12.3456 1.50118C12.2943 1.08937 12.0952 0.710071 11.7852 0.434012C11.4754 0.157968 11.0756 0.00378985 10.6608 0H6.7785C6.36435 0.00487458 5.96609 0.159775 5.65717 0.435639C5.34845 0.711684 5.15002 1.09027 5.09877 1.50119L4.91498 2.77453H1.6875C1.24013 2.77526 0.811352 2.95327 0.495038 3.26957C0.178553 3.58588 0.000554613 4.01465 0 4.46204V5.6527C0.000180526 5.99211 0.102728 6.32378 0.294457 6.60395C0.486007 6.88433 0.757698 7.10024 1.07401 7.22373L1.81443 19.9863ZM14.3385 19.9112C14.3176 20.1332 14.2129 20.3391 14.0455 20.4867C13.8781 20.6342 13.6608 20.7126 13.4378 20.7057H4.00664C3.78368 20.7126 3.56631 20.6342 3.39897 20.4867C3.23161 20.3391 3.1269 20.1332 3.10596 19.9112L2.37859 7.34042H15.0607L14.3385 19.9112ZM6.39276 1.68245C6.41154 1.46959 6.58305 1.30241 6.79645 1.28905H10.6787C10.88 1.3165 11.0351 1.48006 11.0514 1.68245L11.2092 2.76949L6.22458 2.76967L6.39276 1.68245ZM1.29402 4.46221C1.29529 4.24556 1.47077 4.07026 1.68741 4.06882H15.7566C15.9732 4.07026 16.1487 4.24556 16.1499 4.46221V5.65287C16.1499 5.87006 15.9739 6.04626 15.7566 6.04626H1.68741C1.47005 6.04626 1.29402 5.87006 1.29402 5.65287V4.46221Z" fill="#F78D1E"/>
-                                        <path d="M8.72227 19.0236C8.89396 19.0236 9.05843 18.9553 9.17975 18.834C9.30107 18.7127 9.36931 18.5481 9.36931 18.3765V8.92964C9.36931 8.57235 9.07955 8.28259 8.72227 8.28259C8.36498 8.28259 8.07522 8.57235 8.07522 8.92964V18.3715C8.07377 18.5439 8.14148 18.7098 8.26298 18.8324C8.3843 18.9548 8.54967 19.0237 8.72227 19.0237V19.0236Z" fill="#F78D1E"/>
-                                        <path d="M5.74266 18.3377H5.77895C5.95119 18.3289 6.11277 18.252 6.22777 18.1236C6.34295 17.9954 6.40216 17.8264 6.39242 17.6544L5.95227 9.56122C5.93313 9.20393 5.62766 8.92988 5.27037 8.9492C4.91308 8.96852 4.63904 9.27381 4.65817 9.6311L5.09832 17.7298C5.11872 18.0709 5.4009 18.3372 5.74264 18.3381L5.74266 18.3377Z" fill="#F78D1E"/>
-                                        <path d="M11.6652 18.3349H11.7015C12.0421 18.3343 12.3241 18.0693 12.3458 17.7293L12.7832 9.63615C12.8025 9.27887 12.5285 8.97339 12.1712 8.95407C11.8137 8.93493 11.5084 9.20881 11.4891 9.56627L11.0517 17.6544C11.0427 17.8261 11.102 17.9943 11.2172 18.122C11.3322 18.2496 11.4935 18.3263 11.6651 18.335L11.6652 18.3349Z" fill="#F78D1E"/>
-                                        </svg>                                        
-                                </button>
-                            </div>
-                        </div>
-                        </div>
-
-
-
-                        <div class="col-12 my-5">
-                          <div class="card cart-page_total-card">
-                              <div class="card-body">
-                                  <div class="row mb-4">
-                                      <div class="col-6">
-                                          <div class="cart-page_card-light-text">Total Order</div>
-                                      </div>
-                                      <div class="col-6">
-                                          <div class="cart-page_card-bold-title">380.52 gms</div>
-                                      </div>    
-                                  </div>
-                                  <div class="row mb-4">
-                                      <div class="col-6">
-                                          <div class="cart-page_card-light-text">Total Qty</div>
-                                      </div>
-                                      <div class="col-6">
-                                          <div class="cart-page_card-bold-title">89 Qty</div>
-                                      </div>    
-                                  </div>
-                                   <div class="row mb-4">
-                                      <div class="col-6">
-                                          <div class="cart-page_card-light-text">Total Weight</div>
-                                      </div>
-                                      <div class="col-6">
-                                          <div class="cart-page_card-bold-title">2400g</div>
-                                      </div>    
-                                  </div>
-      
-                            
-                                  <div class="col-12 text-center">
-                                      <div class="mb-3">
-                                          <a href="#" data-next="content2" class="btn py-2 btn-warning w-100 custom-yellow-button next-button">Continue</a>
-                                      </div>
-              
-                          
-      
-                                  </div>
-      
+                              <div class="cart-page_card-bold-title mb-2">DCRB2343</div>
+                              <div class="cart-page_card-light-text mb-2">19.9gms</div>
+                              <div
+                                class="input-group quantity-input-group quantity-container">
+                                <input type='button' value='-' class='qtyminus'
+                                  field='quantity' />
+                                <input type='text' name='quantity' value='1'
+                                  class='qty' />
+                                <input type='button' value='+' class='qtyplus'
+                                  field='quantity' />
                               </div>
-                          </div>
-                      </div>
-                    </div>
-
-
-
-
-                      
-
-                    </div>
-
-
-
-
-
-                    <div class="tab-pane fade" id="content2" role="tabpanel"
-                      aria-labelledby="tab2">
-                      
-
-                        <div class="card">
-
-                          <div class="card-header d-flex justify-content-between">
-                            <div class="checkout-page_main-title">Default Packaging Options</div>
-                          
-                          </div>
-
-                          <div class="card-body">
-                            a
-                          </div>
-    
-                          <div class="card-footer">
-                            <div class="mb-3 d-flex justify-content-end">
-                              <a href="#" class="btn btn-warning next-button"
-                                data-next="content3">Continue</a>
                             </div>
                           </div>
 
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="content3" role="tabpanel"
-                      aria-labelledby="tab3">
-
-
-                     <div class="card">
-
-                          <div class="card-header d-flex justify-content-between">
-                            <div class="checkout-page_main-title">Payment</div>
-                          
+                          <div>
+                            <button class=" border-0 bg-transparent">
+                              <svg width="18" height="22" viewBox="0 0 18 22"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M1.81443 19.9863C1.85397 20.5382 2.10311 21.0541 2.51057 21.4284C2.91822 21.8029 3.45332 22.0072 4.00668 21.9998H13.4379C13.9912 22.0072 14.5263 21.8028 14.934 21.4284C15.3415 21.0542 15.5906 20.5382 15.6301 19.9863L16.3703 7.22372C16.6866 7.10023 16.9584 6.88431 17.1499 6.60394C17.3416 6.32375 17.4442 5.99211 17.4443 5.65269V4.46203C17.4438 4.01465 17.2658 3.58588 16.9493 3.26956C16.633 2.95326 16.2042 2.77526 15.7568 2.77452H12.5268L12.3456 1.50118C12.2943 1.08937 12.0952 0.710071 11.7852 0.434012C11.4754 0.157968 11.0756 0.00378985 10.6608 0H6.7785C6.36435 0.00487458 5.96609 0.159775 5.65717 0.435639C5.34845 0.711684 5.15002 1.09027 5.09877 1.50119L4.91498 2.77453H1.6875C1.24013 2.77526 0.811352 2.95327 0.495038 3.26957C0.178553 3.58588 0.000554613 4.01465 0 4.46204V5.6527C0.000180526 5.99211 0.102728 6.32378 0.294457 6.60395C0.486007 6.88433 0.757698 7.10024 1.07401 7.22373L1.81443 19.9863ZM14.3385 19.9112C14.3176 20.1332 14.2129 20.3391 14.0455 20.4867C13.8781 20.6342 13.6608 20.7126 13.4378 20.7057H4.00664C3.78368 20.7126 3.56631 20.6342 3.39897 20.4867C3.23161 20.3391 3.1269 20.1332 3.10596 19.9112L2.37859 7.34042H15.0607L14.3385 19.9112ZM6.39276 1.68245C6.41154 1.46959 6.58305 1.30241 6.79645 1.28905H10.6787C10.88 1.3165 11.0351 1.48006 11.0514 1.68245L11.2092 2.76949L6.22458 2.76967L6.39276 1.68245ZM1.29402 4.46221C1.29529 4.24556 1.47077 4.07026 1.68741 4.06882H15.7566C15.9732 4.07026 16.1487 4.24556 16.1499 4.46221V5.65287C16.1499 5.87006 15.9739 6.04626 15.7566 6.04626H1.68741C1.47005 6.04626 1.29402 5.87006 1.29402 5.65287V4.46221Z"
+                                  fill="#F78D1E" />
+                                <path
+                                  d="M8.72227 19.0236C8.89396 19.0236 9.05843 18.9553 9.17975 18.834C9.30107 18.7127 9.36931 18.5481 9.36931 18.3765V8.92964C9.36931 8.57235 9.07955 8.28259 8.72227 8.28259C8.36498 8.28259 8.07522 8.57235 8.07522 8.92964V18.3715C8.07377 18.5439 8.14148 18.7098 8.26298 18.8324C8.3843 18.9548 8.54967 19.0237 8.72227 19.0237V19.0236Z"
+                                  fill="#F78D1E" />
+                                <path
+                                  d="M5.74266 18.3377H5.77895C5.95119 18.3289 6.11277 18.252 6.22777 18.1236C6.34295 17.9954 6.40216 17.8264 6.39242 17.6544L5.95227 9.56122C5.93313 9.20393 5.62766 8.92988 5.27037 8.9492C4.91308 8.96852 4.63904 9.27381 4.65817 9.6311L5.09832 17.7298C5.11872 18.0709 5.4009 18.3372 5.74264 18.3381L5.74266 18.3377Z"
+                                  fill="#F78D1E" />
+                                <path
+                                  d="M11.6652 18.3349H11.7015C12.0421 18.3343 12.3241 18.0693 12.3458 17.7293L12.7832 9.63615C12.8025 9.27887 12.5285 8.97339 12.1712 8.95407C11.8137 8.93493 11.5084 9.20881 11.4891 9.56627L11.0517 17.6544C11.0427 17.8261 11.102 17.9943 11.2172 18.122C11.3322 18.2496 11.4935 18.3263 11.6651 18.335L11.6652 18.3349Z"
+                                  fill="#F78D1E" />
+                              </svg>
+                            </button>
                           </div>
-                          
+                        </div>
+
+                        <div
+                          class="d-flex justify-content-between mobile-cart_item">
+                          <div class="d-flex">
+                            <div class="mr-4">
+                              <img class="square bg-white p-2"
+                                src="/assets/img/product/product.png" width="96"
+                                height="96" alt>
+
+                            </div>
+                            <div>
+                              <div class="cart-page_card-bold-title mb-2">DCRB2343</div>
+                              <div class="cart-page_card-light-text mb-2">19.9gms</div>
+                              <div
+                                class="input-group quantity-input-group quantity-container">
+                                <input type='button' value='-' class='qtyminus'
+                                  field='quantity' />
+                                <input type='text' name='quantity' value='1'
+                                  class='qty' />
+                                <input type='button' value='+' class='qtyplus'
+                                  field='quantity' />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div>
+                            <button class=" border-0 bg-transparent">
+                              <svg width="18" height="22" viewBox="0 0 18 22"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M1.81443 19.9863C1.85397 20.5382 2.10311 21.0541 2.51057 21.4284C2.91822 21.8029 3.45332 22.0072 4.00668 21.9998H13.4379C13.9912 22.0072 14.5263 21.8028 14.934 21.4284C15.3415 21.0542 15.5906 20.5382 15.6301 19.9863L16.3703 7.22372C16.6866 7.10023 16.9584 6.88431 17.1499 6.60394C17.3416 6.32375 17.4442 5.99211 17.4443 5.65269V4.46203C17.4438 4.01465 17.2658 3.58588 16.9493 3.26956C16.633 2.95326 16.2042 2.77526 15.7568 2.77452H12.5268L12.3456 1.50118C12.2943 1.08937 12.0952 0.710071 11.7852 0.434012C11.4754 0.157968 11.0756 0.00378985 10.6608 0H6.7785C6.36435 0.00487458 5.96609 0.159775 5.65717 0.435639C5.34845 0.711684 5.15002 1.09027 5.09877 1.50119L4.91498 2.77453H1.6875C1.24013 2.77526 0.811352 2.95327 0.495038 3.26957C0.178553 3.58588 0.000554613 4.01465 0 4.46204V5.6527C0.000180526 5.99211 0.102728 6.32378 0.294457 6.60395C0.486007 6.88433 0.757698 7.10024 1.07401 7.22373L1.81443 19.9863ZM14.3385 19.9112C14.3176 20.1332 14.2129 20.3391 14.0455 20.4867C13.8781 20.6342 13.6608 20.7126 13.4378 20.7057H4.00664C3.78368 20.7126 3.56631 20.6342 3.39897 20.4867C3.23161 20.3391 3.1269 20.1332 3.10596 19.9112L2.37859 7.34042H15.0607L14.3385 19.9112ZM6.39276 1.68245C6.41154 1.46959 6.58305 1.30241 6.79645 1.28905H10.6787C10.88 1.3165 11.0351 1.48006 11.0514 1.68245L11.2092 2.76949L6.22458 2.76967L6.39276 1.68245ZM1.29402 4.46221C1.29529 4.24556 1.47077 4.07026 1.68741 4.06882H15.7566C15.9732 4.07026 16.1487 4.24556 16.1499 4.46221V5.65287C16.1499 5.87006 15.9739 6.04626 15.7566 6.04626H1.68741C1.47005 6.04626 1.29402 5.87006 1.29402 5.65287V4.46221Z"
+                                  fill="#F78D1E" />
+                                <path
+                                  d="M8.72227 19.0236C8.89396 19.0236 9.05843 18.9553 9.17975 18.834C9.30107 18.7127 9.36931 18.5481 9.36931 18.3765V8.92964C9.36931 8.57235 9.07955 8.28259 8.72227 8.28259C8.36498 8.28259 8.07522 8.57235 8.07522 8.92964V18.3715C8.07377 18.5439 8.14148 18.7098 8.26298 18.8324C8.3843 18.9548 8.54967 19.0237 8.72227 19.0237V19.0236Z"
+                                  fill="#F78D1E" />
+                                <path
+                                  d="M5.74266 18.3377H5.77895C5.95119 18.3289 6.11277 18.252 6.22777 18.1236C6.34295 17.9954 6.40216 17.8264 6.39242 17.6544L5.95227 9.56122C5.93313 9.20393 5.62766 8.92988 5.27037 8.9492C4.91308 8.96852 4.63904 9.27381 4.65817 9.6311L5.09832 17.7298C5.11872 18.0709 5.4009 18.3372 5.74264 18.3381L5.74266 18.3377Z"
+                                  fill="#F78D1E" />
+                                <path
+                                  d="M11.6652 18.3349H11.7015C12.0421 18.3343 12.3241 18.0693 12.3458 17.7293L12.7832 9.63615C12.8025 9.27887 12.5285 8.97339 12.1712 8.95407C11.8137 8.93493 11.5084 9.20881 11.4891 9.56627L11.0517 17.6544C11.0427 17.8261 11.102 17.9943 11.2172 18.122C11.3322 18.2496 11.4935 18.3263 11.6651 18.335L11.6652 18.3349Z"
+                                  fill="#F78D1E" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+
+                        <div
+                          class="d-flex justify-content-between mobile-cart_item">
+                          <div class="d-flex">
+                            <div class="mr-4">
+                              <img class="square bg-white p-2"
+                                src="/assets/img/product/product.png" width="96"
+                                height="96" alt>
+                            </div>
+                            <div>
+                              <div class="cart-page_card-bold-title mb-2">DCRB2343</div>
+                              <div class="cart-page_card-light-text mb-2">19.9gms</div>
+                              <div
+                                class="input-group quantity-input-group quantity-container">
+                                <input type='button' value='-' class='qtyminus'
+                                  field='quantity' />
+                                <input type='text' name='quantity' value='1'
+                                  class='qty' />
+                                <input type='button' value='+' class='qtyplus'
+                                  field='quantity' />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div>
+                            <button class=" border-0 bg-transparent">
+                              <svg width="18" height="22" viewBox="0 0 18 22"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M1.81443 19.9863C1.85397 20.5382 2.10311 21.0541 2.51057 21.4284C2.91822 21.8029 3.45332 22.0072 4.00668 21.9998H13.4379C13.9912 22.0072 14.5263 21.8028 14.934 21.4284C15.3415 21.0542 15.5906 20.5382 15.6301 19.9863L16.3703 7.22372C16.6866 7.10023 16.9584 6.88431 17.1499 6.60394C17.3416 6.32375 17.4442 5.99211 17.4443 5.65269V4.46203C17.4438 4.01465 17.2658 3.58588 16.9493 3.26956C16.633 2.95326 16.2042 2.77526 15.7568 2.77452H12.5268L12.3456 1.50118C12.2943 1.08937 12.0952 0.710071 11.7852 0.434012C11.4754 0.157968 11.0756 0.00378985 10.6608 0H6.7785C6.36435 0.00487458 5.96609 0.159775 5.65717 0.435639C5.34845 0.711684 5.15002 1.09027 5.09877 1.50119L4.91498 2.77453H1.6875C1.24013 2.77526 0.811352 2.95327 0.495038 3.26957C0.178553 3.58588 0.000554613 4.01465 0 4.46204V5.6527C0.000180526 5.99211 0.102728 6.32378 0.294457 6.60395C0.486007 6.88433 0.757698 7.10024 1.07401 7.22373L1.81443 19.9863ZM14.3385 19.9112C14.3176 20.1332 14.2129 20.3391 14.0455 20.4867C13.8781 20.6342 13.6608 20.7126 13.4378 20.7057H4.00664C3.78368 20.7126 3.56631 20.6342 3.39897 20.4867C3.23161 20.3391 3.1269 20.1332 3.10596 19.9112L2.37859 7.34042H15.0607L14.3385 19.9112ZM6.39276 1.68245C6.41154 1.46959 6.58305 1.30241 6.79645 1.28905H10.6787C10.88 1.3165 11.0351 1.48006 11.0514 1.68245L11.2092 2.76949L6.22458 2.76967L6.39276 1.68245ZM1.29402 4.46221C1.29529 4.24556 1.47077 4.07026 1.68741 4.06882H15.7566C15.9732 4.07026 16.1487 4.24556 16.1499 4.46221V5.65287C16.1499 5.87006 15.9739 6.04626 15.7566 6.04626H1.68741C1.47005 6.04626 1.29402 5.87006 1.29402 5.65287V4.46221Z"
+                                  fill="#F78D1E" />
+                                <path
+                                  d="M8.72227 19.0236C8.89396 19.0236 9.05843 18.9553 9.17975 18.834C9.30107 18.7127 9.36931 18.5481 9.36931 18.3765V8.92964C9.36931 8.57235 9.07955 8.28259 8.72227 8.28259C8.36498 8.28259 8.07522 8.57235 8.07522 8.92964V18.3715C8.07377 18.5439 8.14148 18.7098 8.26298 18.8324C8.3843 18.9548 8.54967 19.0237 8.72227 19.0237V19.0236Z"
+                                  fill="#F78D1E" />
+                                <path
+                                  d="M5.74266 18.3377H5.77895C5.95119 18.3289 6.11277 18.252 6.22777 18.1236C6.34295 17.9954 6.40216 17.8264 6.39242 17.6544L5.95227 9.56122C5.93313 9.20393 5.62766 8.92988 5.27037 8.9492C4.91308 8.96852 4.63904 9.27381 4.65817 9.6311L5.09832 17.7298C5.11872 18.0709 5.4009 18.3372 5.74264 18.3381L5.74266 18.3377Z"
+                                  fill="#F78D1E" />
+                                <path
+                                  d="M11.6652 18.3349H11.7015C12.0421 18.3343 12.3241 18.0693 12.3458 17.7293L12.7832 9.63615C12.8025 9.27887 12.5285 8.97339 12.1712 8.95407C11.8137 8.93493 11.5084 9.20881 11.4891 9.56627L11.0517 17.6544C11.0427 17.8261 11.102 17.9943 11.2172 18.122C11.3322 18.2496 11.4935 18.3263 11.6651 18.335L11.6652 18.3349Z"
+                                  fill="#F78D1E" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 my-5">
+                        <div class="card cart-page_total-card">
                           <div class="card-body">
-                            a
-                          </div>
-    
-                          
+                            <div class="row mb-4">
+                              <div class="col-6">
+                                <div class="cart-page_card-light-text">Total
+                                  Order</div>
+                              </div>
+                              <div class="col-6">
+                                <div class="cart-page_card-bold-title">380.52
+                                  gms</div>
+                              </div>
+                            </div>
+                            <div class="row mb-4">
+                              <div class="col-6">
+                                <div class="cart-page_card-light-text">Total Qty</div>
+                              </div>
+                              <div class="col-6">
+                                <div class="cart-page_card-bold-title">89 Qty</div>
+                              </div>
+                            </div>
+                            <div class="row mb-4">
+                              <div class="col-6">
+                                <div class="cart-page_card-light-text">Total
+                                  Weight</div>
+                              </div>
+                              <div class="col-6">
+                                <div class="cart-page_card-bold-title">2400g</div>
+                              </div>
+                            </div>
 
+                            <div class="col-12 text-center">
+                              <div class="mb-3">
+                                <a href="#" data-next="default-packing"
+                                  class="btn py-2 btn-warning w-100 custom-yellow-button next-button">Continue</a>
+                              </div>
+
+                            </div>
+
+                          </div>
                         </div>
-                      
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane fade" id="default-packing" role="tabpanel"
+                    aria-labelledby="tab2">
+
+                    <div class="card">
+
+                      <div class="card-header d-flex justify-content-between">
+                        <div class="checkout-page_main-title">Default Packaging
+                          Options</div>
+
+                      </div>
+
+                      <div class="card-body">
+                        Packaging Options
+                      </div>
+
+                      <div class="card-footer">
+                        <div class="mb-3 d-flex justify-content-end">
+                          <a href="#" class="btn btn-warning next-button"
+                            data-next="payment-options">Continue</a>
+                        </div>
+                      </div>
 
                     </div>
                   </div>
+                  <div class="tab-pane fade" id="payment-options" role="tabpanel"
+                    aria-labelledby="tab3">
+
+                    <div class="card">
+
+                      <div class="card-body">
+
+                        <div class="row">
+                          <div class="custom-tabs col-12 col-md-4 mb-5">
+
+                            <div class="mb-4">
+                              <div class="checkout-page_main-title mb-2">Payment</div>
+                              <div class="custom-tab_title">Select a payment
+                                method</div>
+                            </div>
+
+                            <div class="custom-tab active"
+                              onclick="showCustomTab('creditCard')">
+                              <div class="d-flex align-items-center">
+                                <div class="mr-2">
+                                  <svg width="37" height="27"
+                                    viewBox="0 0 37 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M0 6.60714V3.96429C0 2.91243 0.417568 1.90418 1.16153 1.16153C1.90418 0.417568 2.91243 0 3.96429 0H33.0357C34.0876 0 35.0958 0.417568 35.8385 1.16153C36.5824 1.90418 37 2.91243 37 3.96429V6.60714H0ZM37 9.25V22.4643C37 23.5161 36.5824 24.5244 35.8385 25.267C35.0958 26.011 34.0876 26.4286 33.0357 26.4286H3.96429C2.91243 26.4286 1.90418 26.011 1.16153 25.267C0.417568 24.5244 0 23.5161 0 22.4643V9.25H37ZM21.1429 18.5H17.1786C16.4491 18.5 15.8571 19.092 15.8571 19.8214C15.8571 20.5509 16.4491 21.1429 17.1786 21.1429H21.1429C21.8723 21.1429 22.4643 20.5509 22.4643 19.8214C22.4643 19.092 21.8723 18.5 21.1429 18.5ZM30.3929 18.5H26.4286C25.6991 18.5 25.1071 19.092 25.1071 19.8214C25.1071 20.5509 25.6991 21.1429 26.4286 21.1429H30.3929C31.1223 21.1429 31.7143 20.5509 31.7143 19.8214C31.7143 19.092 31.1223 18.5 30.3929 18.5Z"
+                                      fill="#F78D1E" />
+                                  </svg>
+
+                                </div>
+
+                                <div>
+                                  <div class="custom-tab_title">Credit/Debit
+                                    Card</div>
+                                  <div class="custom-tab_text">Visa, Mastercard,
+                                    Maestro, Rupay</div>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="custom-tab"
+                              onclick="showCustomTab('netBanking')">
+                              <div class="d-flex align-items-center">
+                                <div class="mr-2">
+                                  <svg width="33" height="39"
+                                    viewBox="0 0 33 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M7.88449 13.6046H3.34961V33.5581H7.88449V13.6046Z"
+                                      fill="#F78D1E" />
+                                    <path
+                                      d="M31.4654 34.4651H1.53516V39H31.4654V34.4651Z"
+                                      fill="#F78D1E" />
+                                    <path
+                                      d="M18.7693 13.6046H14.2344V33.5581H18.7693V13.6046Z"
+                                      fill="#F78D1E" />
+                                    <path
+                                      d="M29.6521 13.6046H25.1172V33.5581H29.6521V13.6046Z"
+                                      fill="#F78D1E" />
+                                    <path
+                                      d="M32.3731 11.7907H0.628906L16.501 0L32.3731 11.7907Z"
+                                      fill="#F78D1E" />
+                                  </svg>
+
+                                </div>
+
+                                <div>
+                                  <div class="custom-tab_title">Netbanking</div>
+                                  <div class="custom-tab_text">Pay with Internet
+                                    Banking Account</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="custom-tab"
+                              onclick="showCustomTab('wallet')">
+                              <div class="d-flex align-items-center">
+                                <div class="mr-2">
+                                  <svg width="35" height="29"
+                                    viewBox="0 0 35 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M18.9583 12.4583V16.8333C18.9583 17.9936 19.4193 19.1064 20.2397 19.9269C21.0602 20.7474 22.173 21.2083 23.3333 21.2083H33.5417C34.0398 21.2115 34.5342 21.1225 35 20.9458V24.125C35 25.2853 34.5391 26.3981 33.7186 27.2186C32.8981 28.039 31.7853 28.5 30.625 28.5H4.375C3.21468 28.5 2.10188 28.039 1.28141 27.2186C0.460936 26.3981 0 25.2853 0 24.125V5.16663C0 4.0063 0.460936 2.89351 1.28141 2.07303C2.10188 1.25256 3.21468 0.791626 4.375 0.791626H30.625C31.7853 0.791626 32.8981 1.25256 33.7186 2.07303C34.5391 2.89351 35 4.0063 35 5.16663V8.34579C34.5342 8.16912 34.0398 8.08013 33.5417 8.08329H23.3333C22.173 8.08329 21.0602 8.54423 20.2397 9.3647C19.4193 10.1852 18.9583 11.298 18.9583 12.4583Z"
+                                      fill="#F78D1E" />
+                                    <path
+                                      d="M33.5417 10.9999H23.3333C22.9466 10.9999 22.5756 11.1536 22.3021 11.4271C22.0286 11.7006 21.875 12.0715 21.875 12.4583V16.8333C21.875 17.22 22.0286 17.591 22.3021 17.8645C22.5756 18.138 22.9466 18.2916 23.3333 18.2916H33.5417C33.9284 18.2916 34.2994 18.138 34.5729 17.8645C34.8464 17.591 35 17.22 35 16.8333V12.4583C35 12.0715 34.8464 11.7006 34.5729 11.4271C34.2994 11.1536 33.9284 10.9999 33.5417 10.9999ZM26.9792 16.8333C26.5465 16.8333 26.1236 16.705 25.7639 16.4646C25.4041 16.2242 25.1237 15.8826 24.9582 15.4829C24.7926 15.0832 24.7493 14.6433 24.8337 14.219C24.9181 13.7947 25.1264 13.4049 25.4324 13.099C25.7383 12.793 26.1281 12.5847 26.5524 12.5003C26.9767 12.4159 27.4166 12.4592 27.8163 12.6248C28.216 12.7904 28.5576 13.0707 28.798 13.4305C29.0384 13.7902 29.1667 14.2131 29.1667 14.6458C29.1667 15.2259 28.9362 15.7823 28.526 16.1926C28.1157 16.6028 27.5593 16.8333 26.9792 16.8333Z"
+                                      fill="#F78D1E" />
+                                  </svg>
+
+                                </div>
+
+                                <div>
+                                  <div class="custom-tab_title">Wallet</div>
+                                  <div class="custom-tab_text">Pay using a
+                                    Wallet</div>
+                                </div>
+                              </div>
+                            </div>
+
+
+
+                          </div>
+
+                          <div class="col-12 col-md-8">
+
+                            <div>
+                              <div class="checkout-light-text mb-2">Amount
+                                payable is</div>
+                              <div class="checkout-page_main-title mb-4">₹46,416</div>
+                            </div>
+
+                            <div class="custom-tab-content active"
+                              id="creditCard">
+                              <!-- Credit Card Content Goes Here -->
+                              <div class="custom-tab_title">Pay with
+                                Credit/Debit Card</div>
+
+                              <div class="row">
+                                <div class="col-12 mb-3">
+                                  <label class="form-label" for="card-number">Card
+                                    Number</label>
+                                  <input id="card-number" class="form-control"
+                                    type="text">
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                  <div class="row">
+                                    <div class="col-6 col-sm-4 col-md-3">
+                                      <label class="form-label"
+                                        for="expiry-date">Expiry Date</label>
+                                      <input placeholder="MM / YY"
+                                        id="expiry-date" class="form-control"
+                                        type="text">
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3">
+                                      <label class="form-label" for="cvv">CVV</label>
+                                      <input maxlength="3" id="cvv"
+                                        class="form-control" type="password">
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                  <label class="form-label"
+                                    for="card-holder-name">Cardholder’s Name</label>
+                                  <input id="card-holder-name"
+                                    class="form-control" type="text">
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <div class="custom-tab-content" id="netBanking">
+                              <!-- Net Banking Content Goes Here -->
+                              <div class="custom-tab_title">Pay with Netbanking</div>
+
+                            </div>
+
+                            <div class="custom-tab-content" id="wallet">
+                              <!-- Wallet Content Goes Here -->
+                              <div class="custom-tab_title">Pay with Wallet</div>
+
+                            </div>
+
+
+                            <div class="text-center payment-buttons my-4">
+                              <div><button class="btn btn-warning pay-button mb-4">Pay Now</button></div>
+                              <div><button class="cancel-button btn">Cancel Payment</button></div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
 
               </div>
 
@@ -718,7 +976,7 @@
           </section>
 
         </div>
-        
+
       </div>
     </div>
 
@@ -774,6 +1032,41 @@
 
 
     });
+
+</script>
+
+    <script>
+ function showCustomTab(tabId) {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll('.custom-tab-content');
+    tabContents.forEach((content) => {
+        content.classList.remove('active');
+    });
+
+    // Remove the "active" class from all tabs
+    const tabs = document.querySelectorAll('.custom-tab');
+    tabs.forEach((tab) => {
+        tab.classList.remove('active');
+    });
+
+    // Show the selected tab content
+    document.getElementById(tabId).classList.add('active');
+
+    // Add the "active" class to the selected tab
+    const selectedTab = document.querySelector(`[onclick="showCustomTab('${tabId}')"]`);
+    selectedTab.classList.add('active');
+}
+
+const customTabs = document.querySelectorAll('.custom-tab');
+
+// Add an event listener to each tab
+customTabs.forEach((tab) => {
+    tab.addEventListener('click', function () {
+        // Highlight the clicked tab
+        customTabs.forEach((t) => t.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
 
 </script>
   </body>

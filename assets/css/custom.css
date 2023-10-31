@@ -755,7 +755,7 @@ line-height: 100%; /* 20px */
     flex-shrink: 0;
     border-radius: 50%;
     margin: auto;
-    background-color: #A0A0A0;
+    background-color: #E4E4E4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -955,7 +955,7 @@ line-height: 156.5%;
 .checkout-page_main-title{
     color: #2D2D2D;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%; /* 30px */
@@ -965,7 +965,7 @@ line-height: 156.5%;
     .checkout-page_main-title{
         color: #2D2D2D;
         font-family: Inter;
-        font-size: 28px;
+        font-size: 26px;
         font-style: normal;
         font-weight: 700;
         line-height: 100%; /* 30px */
@@ -1613,7 +1613,9 @@ line-height: 130%; /* 23.4px */
     margin: 10px 0;
     text-transform: uppercase;
 }
-
+.shop-page_product-cards .shop-page_product-card .card-body .card-button{
+    min-width: 114px;
+}
 
 .shop-page_product-card .card-body input[type=button]{
     background: #fff !important;
@@ -1868,4 +1870,134 @@ aside{
 
 .checkout-page .SumoSelect.open .search-txt{
     background-color: #fff;
+}
+
+
+
+
+
+.custom-tabs {
+    border-right: none;
+}
+.custom-tabs .active{
+    background: #F1F2F6;
+}
+
+.custom-tab {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: none;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;;
+}
+
+.custom-tab-content {
+    display: none;
+}
+
+.custom-tab-content.active {
+    display: block;
+}
+
+.custom-tab_title{
+    color: #2D2D2D;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 136.5%; /* 24.57px */
+}
+.custom-tab_text{
+    color: #2D2D2D;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.5%; /* 21.84px */
+}
+.checkout-light-text{
+    color: #8C8C8C;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 136.5%; /* 27.3px */
+}
+.checkout-page input{
+    max-width: 500px;
+}
+
+.payment-buttons{
+    max-width: 500px;
+} 
+.checkout-page .pay-button{
+        border-radius: 30px;
+    background: #F78D1E;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    width: 100%;
+    height: 40px;
+    }
+    .checkout-page .cancel-button{
+        color: #EC0000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 136.5%; /* 27.3px */
+        width: 100%;
+    }
+
+@media (min-width:768px) {
+
+    .checkout-page .pay-button{
+        border-radius: 30px;
+    background: #F78D1E;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    width: 100%;
+    height: 60px;
+    }
+    .checkout-page .cancel-button{
+        color: #EC0000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 136.5%; /* 27.3px */
+        width: 100%;
+    }
+    .custom-tabs {
+        border-right: 1px solid #E0E0E0;
+    }
+    .custom-tab_title{
+        color: #2D2D2D;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 136.5%; /* 24.57px */
+    }
+    .custom-tab_text{
+        color: #2D2D2D;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 136.5%; /* 21.84px */
+    }
 }
