@@ -35,9 +35,9 @@ body {
 .main-sidebar .sidebar-brand a .header-logo {
     height: auto;
     width: 100%;
-    max-width: 160px;
+    /* max-width: 160px; */
     max-height: 120.368px;
-    padding: 10px 5px;
+    padding:20px 10px;
     margin-bottom: 20px;
     object-fit: contain;
 }
@@ -388,7 +388,7 @@ body {
 }
 
 .main-menu-links {
-    overflow: auto;
+    /* overflow: auto; */
     gap: 5px;
     border-radius: 10px;
     background: #FFF;
@@ -1614,7 +1614,7 @@ line-height: 130%; /* 23.4px */
     text-transform: uppercase;
 }
 .shop-page_product-cards .shop-page_product-card .card-body .card-button{
-    min-width: 114px;
+    width: 100px;
 }
 
 .shop-page_product-card .card-body input[type=button]{
@@ -2001,3 +2001,9 @@ line-height: 136.5%; /* 27.3px */
     line-height: 136.5%; /* 21.84px */
     }
 }
+
+.tab-content .card{
+    min-height: 450px;
+}
+
+
