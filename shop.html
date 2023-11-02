@@ -2121,37 +2121,36 @@
   })
      
   </script>
-    <script>
-  jQuery(document).ready(function() {
-// Handle increment and decrement for each container
-$('.quantity-container').each(function() {
-  var container = $(this);
-  var qtyInput = container.find('.qty');
+   <script>
+    jQuery(document).ready(function() {
+  // Handle increment and decrement for each container
+  $('.quantity-container').each(function() {
+    var container = $(this);
+    var qtyInput = container.find('.qty');
 
-  container.find('.qtyplus').click(function(e) {
-    e.preventDefault();
-    var currentVal = parseInt(qtyInput.val());
-    if (!isNaN(currentVal)) {
-      qtyInput.val(currentVal + 200);
-    } else {
-      qtyInput.val(0);
-    }
-  });
+    container.find('.qtyplus').click(function(e) {
+      e.preventDefault();
+      var currentVal = parseInt(qtyInput.val());
+      if (!isNaN(currentVal)) {
+        qtyInput.val(currentVal + 1);
+      } else {
+        qtyInput.val(0);
+      }
+    });
 
-  container.find('.qtyminus').click(function(e) {
-    e.preventDefault();
-    var currentVal = parseInt(qtyInput.val());
-    if (!isNaN(currentVal) && currentVal > 0) {
-
-      qtyInput.val(currentVal - 200);
-    } else {
-      qtyInput.val(0);
-    }
+    container.find('.qtyminus').click(function(e) {
+      e.preventDefault();
+      var currentVal = parseInt(qtyInput.val());
+      if (!isNaN(currentVal) && currentVal > 200) {
+        qtyInput.val(currentVal - 1);
+      } else {
+        qtyInput.val(200);
+      }
+    });
   });
 });
-});
 
-</script>
+  </script>
     <script>
    document.addEventListener("DOMContentLoaded", function () {
   const gridButton = document.querySelector(".grid-view");
